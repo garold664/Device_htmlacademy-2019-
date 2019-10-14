@@ -1,0 +1,44 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+
+@mixin hide-text {
+  // font-size: 0;
+  // box-shadow: none;
+  // color: transparent;
+
+  // text-indent: -1000px;
+
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+
+
+}
+
+@mixin button-reset {
+
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@mixin visuallyhidden {
+  position: absolute !important;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  word-wrap: normal;
+}

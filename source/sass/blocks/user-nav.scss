@@ -1,0 +1,36 @@
+.user-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  @include ul-reset;
+  margin-left: 102px;
+
+  &__item:not(:last-child) {
+    margin-right: 40px;
+  }
+  &__item--user {
+    flex-grow: 1;
+  }
+  &__link {
+    text-decoration: none;
+    font-weight: 300;
+    color: #000;
+  }
+  &__link:hover {
+    opacity: 0.6;
+  }
+  &__link:active {
+    opacity: 0.3;
+  }
+
+  &__icon {
+    display: inline-block;
+    vertical-align: baseline;
+    margin-right: 6px;
+  }
+
+
+  &__item--user &__icon {
+    margin-right: 10px;
+  }
+}

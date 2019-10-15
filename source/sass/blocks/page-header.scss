@@ -9,11 +9,16 @@
     background-color: $yellow;
   }
 
+  &__row {
+    display: flex;
+    align-items: center;
+    padding-top: 8px;
+  }
+
   &__search {
     display: flex;
     align-items: center;
     width: 440px;
-    padding-top: 10px;
     border-bottom: 2px solid #000;
     font-size: 0;
   }
@@ -71,5 +76,7 @@
   &__search-input:focus + &__search-submit {
     display: inline-block;
   }
+
+
 
 }

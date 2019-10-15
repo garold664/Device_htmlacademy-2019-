@@ -3,7 +3,6 @@
   &__list {
     @include ul-reset;
     display: flex;
-    position: relative;
 
     padding-top: 26px;
   }
@@ -56,8 +55,7 @@
     align-content: flex-start;
     box-sizing: content-box;
     max-height: 130px;
-    padding-top: 20px;
-    padding-bottom: 30px;
+    padding: 20px 60px 30px;
     background-color: $yellow;
   }
 
@@ -75,7 +73,7 @@
     padding-bottom: 30px;
   }
 
-  &__link--dropdown:hover + &__sublist {
+  &__item--dropdown:hover  &__sublist {
     display: flex;
   }
 

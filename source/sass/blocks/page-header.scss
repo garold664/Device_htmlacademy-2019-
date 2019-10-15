@@ -1,4 +1,6 @@
 .page-header {
+  width: 1200px;
+  margin: 0 auto;
   padding: 40px 20px 0;
 
   &__container {
@@ -7,5 +9,66 @@
     background-color: $yellow;
   }
 
+  &__search {
+    display: inline-block;
+    vertical-align: middle;
+    width: 440px;
+    padding-top: 10px;
+    border-bottom: 2px solid #000;
+    font-size: 0;
+  }
+  &__search-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    margin-left: 3px;
+    margin-right: 20px;
+    background-repeat: no-repeat;
+    background-image: url("../img/icon-search.svg");
+  }
+
+  &__search-input {
+    @include button-reset;
+    width: 315px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 2;
+    vertical-align: middle;
+    background-color: transparent;
+  }
+
+  &__search-input::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  &__search-input:focus,
+  &__search-input:active,
+  &__search-submit:focus,
+  &__search-submit:active {
+    outline: none;
+  }
+
+  &__search-input:hover::placeholder,
+  &__search-input:focus::placeholder,
+  &__search-input:active::placeholder {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &__search-submit {
+    @include button-reset;
+    // display: none;
+    padding: 8px 19px;
+    border: 2px solid #000;
+    border-bottom: none;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 2;
+    vertical-align: middle;
+  }
+
+  &__search-input:focus + &__search-submit {
+    display: inline-block;
+  }
 
 }

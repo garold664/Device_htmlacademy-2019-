@@ -4,6 +4,7 @@
 *.log
 *.pdf
 *.psd
+*.zip
 *.sublime*
 *.css
 node_modules/

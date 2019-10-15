@@ -1,0 +1,38 @@
+.preview {
+  width: 1040px;
+  margin: 0 auto;
+
+  &__article {
+    position: relative;
+    display: none;
+    justify-content: flex-start;
+    margin-top: -110px;
+
+  }
+
+  &__article-wrap {
+    order: 2;
+    width: 520px;
+    padding: 0 20px;
+    margin-left: 80px;
+    outline: 1px solid red;
+  }
+  &__fig {
+    box-sizing: content-box;
+    width: 400px;
+    margin: 0;
+    padding: 0 20px;
+    outline: 1px solid red;
+  }
+
+  &__img {
+    margin-left: 10px;
+  }
+
+  &__radio {
+    display: none;
+  }
+  &__radio:checked + &__article {
+    display: flex;
+  }
+}

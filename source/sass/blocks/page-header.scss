@@ -10,8 +10,8 @@
   }
 
   &__search {
-    display: inline-block;
-    vertical-align: middle;
+    display: flex;
+    align-items: center;
     width: 440px;
     padding-top: 10px;
     border-bottom: 2px solid #000;
@@ -31,6 +31,7 @@
   &__search-input {
     @include button-reset;
     width: 315px;
+    flex-grow: 1;
     font-weight: 300;
     font-size: 15px;
     line-height: 2;

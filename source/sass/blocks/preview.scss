@@ -69,7 +69,7 @@
     line-height: 24px;
     outline: 1px solid #0f0;
     transition: all 1s ease-in;
-    background-image: linear-gradient(to bottom, #fff, #fff 16px, $yellowBright 16px, $yellowBright 24px, #fff 24px);
+    background-image: linear-gradient(to bottom, #fff, #fff 40%, $yellowBright 40%, $yellowBright 60%, #fff 60%);
   }
 
   &__link:hover {

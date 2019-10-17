@@ -2,6 +2,10 @@
   width: 1040px;
   margin: 0 auto;
 
+  &__slider {
+    position: relative;
+  }
+
   &__article {
     position: relative;
     display: none;
@@ -137,7 +141,9 @@
 
   &__nav {
     position: absolute;
-    outline: 1px solid #0f0;
+    bottom: 155px;
+    right: 25px;
+    font-size: 0;
   }
 
   &__nav-btn {
@@ -145,35 +151,18 @@
     position: relative;
     width: 12px;
     height: 12px;
+    margin-right: 20px;
     border-radius: 50%;
     border: 1px solid #000;
     cursor: pointer;
   }
 
-  &__radio[id="article-1"]:checked ~ &__nav > &__nav-btn[for="article-1"]::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    border: 1px solid #000;
+  &__nav-btn:last-child {
+    margin-right: 0;
   }
-  &__radio[id="article-2"]:checked ~ &__nav > &__nav-btn[for="article-2"]::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    border: 1px solid #000;
-  }
+
+  &__radio[id="article-1"]:checked ~ &__nav > &__nav-btn[for="article-1"]::before,
+  &__radio[id="article-2"]:checked ~ &__nav > &__nav-btn[for="article-2"]::before,
   &__radio[id="article-3"]:checked ~ &__nav > &__nav-btn[for="article-3"]::before {
     content: "";
     display: block;

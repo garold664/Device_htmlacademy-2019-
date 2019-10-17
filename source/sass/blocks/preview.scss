@@ -110,9 +110,13 @@
   }
 
   &__spec-term {
+    padding-top: 7px;
     font-size: 13px;
     line-height: 20px;
     color: #464646;
+  }
+  &__spec-term:not(:last-child) {
+    padding-right: 34px;
   }
 
   &__spec-descr {

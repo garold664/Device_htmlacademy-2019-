@@ -34,7 +34,6 @@
 
   &__article-lead {
     display: block;
-    padding-right: 90px;
     font-family: $gilroy;
     font-weight: 800;
     font-size: 47px;
@@ -120,7 +119,7 @@
     color: #464646;
   }
   &__spec-term:not(:last-child) {
-    padding-right: 34px;
+    padding-right: 75px;
   }
 
   &__spec-descr {

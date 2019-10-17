@@ -105,6 +105,21 @@
     margin-left: 10px;
   }
 
+  &__spec-term {
+    font-size: 13px;
+    line-height: 20px;
+    color: #464646;
+  }
+
+  &__spec-descr {
+    @include reset;
+    font-family: $gilroy;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+
   &__radio {
     display: none;
   }
@@ -163,4 +178,6 @@
     border-radius: 50%;
     border: 1px solid #000;
   }
+
+
 }

@@ -16,7 +16,6 @@
     width: 520px;
     padding: 77px 20px 0;
     margin-left: 80px;
-    outline: 1px solid red;
   }
 
   &__article-wrap::before {
@@ -111,5 +110,57 @@
   }
   &__radio:checked + &__article {
     display: flex;
+  }
+
+  &__nav {
+    position: absolute;
+    outline: 1px solid #0f0;
+  }
+
+  &__nav-btn {
+    display: inline-block;
+    position: relative;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    cursor: pointer;
+  }
+
+  &__radio[id="article-1"]:checked ~ &__nav > &__nav-btn[for="article-1"]::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    border: 1px solid #000;
+  }
+  &__radio[id="article-2"]:checked ~ &__nav > &__nav-btn[for="article-2"]::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    border: 1px solid #000;
+  }
+  &__radio[id="article-3"]:checked ~ &__nav > &__nav-btn[for="article-3"]::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    border: 1px solid #000;
   }
 }

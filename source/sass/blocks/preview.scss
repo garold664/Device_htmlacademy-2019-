@@ -11,18 +11,75 @@
   }
 
   &__article-wrap {
+    position: relative;
     order: 2;
     width: 520px;
-    padding: 0 20px;
+    padding: 77px 20px 0;
     margin-left: 80px;
     outline: 1px solid red;
+  }
+
+  &__article-wrap::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 35px;
+    width: 100px;
+    height: 7px;
+    background-color: #fff;
+  }
+
+  &__article-lead {
+    display: block;
+    padding-right: 90px;
+    font-family: $gilroy;
+    font-weight: 800;
+    font-size: 47px;
+    line-height: 56px;
+  }
+
+  &__content {
+    @include reset;
+    padding: 20px 0 40px;
+    font-family: $opensans;
+    font-weight: 300;
+    font-size: 15px;
+  }
+
+  &__number {
+    position: absolute;
+    top: -15px;
+    right: -13px;
+    font-family: $gilroy;
+    font-weight: 800;
+    font-size: 180px;
+    line-height: 1;
+    color: #fff;
+  }
+
+  &__link {
+    @include link-reset;
+    display: inline-block;
+    padding: 8px 40px;
+    font-family: $gilroy;
+    font-weight: 800;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    line-height: 24px;
+    outline: 1px solid #0f0;
+    transition: all 1s ease-in;
+    background-image: linear-gradient(to bottom, #fff, #fff 16px, $yellowBright 16px, $yellowBright 24px, #fff 24px);
+  }
+
+  &__link:hover {
+    background-image: linear-gradient(to bottom, $yellowBright 0%, $yellowBright 100%);
   }
   &__fig {
     box-sizing: content-box;
     width: 400px;
     margin: 0;
     padding: 0 20px;
-    outline: 1px solid red;
   }
 
   &__img {

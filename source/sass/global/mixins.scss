@@ -21,6 +21,13 @@
 
 }
 
+
+@mixin reset {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 @mixin ul-reset {
   margin: 0;
   padding: 0;
@@ -28,13 +35,25 @@
 }
 
 @mixin button-reset {
-
   padding: 0;
   border: none;
   font: inherit;
   color: inherit;
   background-color: transparent;
   cursor: pointer;
+}
+
+@mixin link-reset {
+  text-decoration: none;
+  color: #000;
+}
+
+@mixin input-reset {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
 }
 
 @mixin visuallyhidden {

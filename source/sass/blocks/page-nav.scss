@@ -31,6 +31,17 @@
     color: #000;
   }
 
+  &__link:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+  &__item--dropdown:hover > &__link {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &__link:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
   &__link--dropdown::after {
     content: "";
     display: inline-block;

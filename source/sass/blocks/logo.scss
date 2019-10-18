@@ -1,4 +1,13 @@
 .logo {
   display: block;
   margin-top: -20px;
+  cursor: pointer;
+}
+
+.logo:hover {
+  opacity: 0.6;
+}
+
+.logo:active {
+  opacity: 0.3;
 }

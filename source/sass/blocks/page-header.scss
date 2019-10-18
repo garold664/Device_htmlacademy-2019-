@@ -88,6 +88,18 @@
     color: #fff;
   }
 
+  &__search-submit:active::before,
+  &__search-submit:focus::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: #000;
+  }
+
   &__search-submit:active {
     color: rgba(255, 255, 255, 0.3);
   }

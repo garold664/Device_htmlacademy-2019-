@@ -34,6 +34,8 @@
   }
 
   &__article-lead {
+    position: relative;
+    z-index: 5;
     display: block;
     font-family: $gilroy;
     font-weight: 800;
@@ -51,7 +53,7 @@
 
   &__number {
     position: absolute;
-    z-index: -1;
+    z-index: 1;
     top: -15px;
     right: -13px;
     font-family: $gilroy;

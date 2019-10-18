@@ -1,6 +1,7 @@
 .preview {
   width: 1040px;
   margin: 0 auto;
+  margin-bottom: 80px;
 
   &__slider {
     position: relative;
@@ -10,15 +11,15 @@
     position: relative;
     display: none;
     justify-content: flex-start;
+    min-height: 486px;
     margin-top: -110px;
-
   }
 
   &__article-wrap {
     position: relative;
     order: 2;
     width: 520px;
-    padding: 77px 20px 0;
+    padding: 77px 8px 0 20px;
     margin-left: 80px;
   }
 
@@ -42,7 +43,7 @@
 
   &__content {
     @include reset;
-    padding: 20px 0 40px;
+    padding: 20px 9px 45px 0;
     font-family: $opensans;
     font-weight: 300;
     font-size: 15px;
@@ -50,6 +51,7 @@
 
   &__number {
     position: absolute;
+    z-index: -1;
     top: -15px;
     right: -13px;
     font-family: $gilroy;
@@ -98,10 +100,13 @@
     bottom: 0;
   }
   &__fig {
-    box-sizing: content-box;
-    width: 400px;
+    // box-sizing: content-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 440px;
     margin: 0;
-    padding: 0 20px;
+    // padding: 0 20px;
   }
 
   &__img {
@@ -140,7 +145,7 @@
 
   &__nav {
     position: absolute;
-    bottom: 155px;
+    bottom: 145px;
     right: 25px;
     font-size: 0;
   }

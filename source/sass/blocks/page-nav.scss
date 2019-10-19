@@ -8,12 +8,12 @@
   }
 
   &__item {
-    margin-right: 25px;
+    margin-right: 34px;
   }
 
   &__item:last-child {
     margin-left: 75px;
-    margin-right: 0;
+    margin-right: -4px;
   }
   &__item--dropdown {
     flex-grow: 1;
@@ -27,8 +27,7 @@
     font-weight: 800;
     text-decoration: none;
     text-transform: uppercase;
-    letter-spacing: 4px;
-    word-spacing: -4px;
+    letter-spacing: 3.6px;
     color: #000;
   }
 

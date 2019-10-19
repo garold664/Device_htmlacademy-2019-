@@ -57,12 +57,24 @@
 
 
   &__nav-link--active::before,
-  &__nav-link:active::before {
+  &__nav-link:active ::before {
     top: 0;
     bottom: 0;
     left: 0;
     width: 284px;
     background-color: #000;
+  }
+
+  &__nav-link--active:hover::before
+  // ,&__nav-link--active:focus::before
+   {
+    background-color: $yellowBright;
+  }
+
+  &__nav-link--active:hover
+  // ,&__nav-link--active:focus
+  {
+    color: #000;
   }
 
 
@@ -73,6 +85,10 @@
 
   &__slide {
     display: none;
+  }
+
+  .no-js &__slide {
+    display: block;
   }
 
   &__slide--active {

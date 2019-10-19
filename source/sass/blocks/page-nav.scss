@@ -17,6 +17,7 @@
   }
   &__item--dropdown {
     flex-grow: 1;
+    cursor: pointer;
   }
 
   &__link {
@@ -38,7 +39,7 @@
     color: rgba(0, 0, 0, 0.6);
   }
 
-  &__link:active {
+  &__item &__link:active {
     color: rgba(0, 0, 0, 0.3);
   }
 

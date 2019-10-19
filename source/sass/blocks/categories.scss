@@ -9,24 +9,37 @@
   }
 
   &__item:not(:last-child) {
+    position: relative;
     margin-right: 40px;
+  }
+
+  &__item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 160px;
+    height: 160px;
+    background-color: $yellow;
   }
 
   &__link {
     @include link-reset;
+    display: block;
     width: 160px;
   }
 
   &__link-icon {
     width: 160px;
     height: 160px;
-    background-color: $yellow;
+    pointer-events: none;
   }
 
   &__link-icon::before {
     content: "";
     display: block;
     height: 100%;
+    pointer-events: none;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-image: url("../img/icon-virtual.svg");
@@ -53,20 +66,17 @@
     background-image: url("../img/icon-quadcopter.svg");
   }
 
-  &__link:hover &__link-icon {
+  &__item:hover::before  {
     background-color: $yellowBright;
   }
 
-  &__link:active &__link-icon::before {
-    opacity: 0.3;
-  }
-
-  &__link:active &__link-title {
+  &__link:active {
     opacity: 0.3;
   }
 
   &__link-title {
     display: block;
+    pointer-events: none;
     padding-top: 32px;
     font-family: $gilroy;
     font-weight: 800;

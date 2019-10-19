@@ -17,6 +17,7 @@
     padding-top: 80px;
     padding-bottom: 70px;
     margin-right: 40px;
+    margin-top: -50px;
   }
 
   &__nav::after {
@@ -29,18 +30,38 @@
     right: 76px;
     background-color: #000;
   }
+
+  &__nav-item {
+    width: 284px;
+    margin-bottom: 24px;
+  }
+
   &__nav-link {
     @include link-reset;
-    padding: 8px 162px 8px 20px;
+    display: inline-block;
+    width: 160px;
+    padding: 8px 0;
     font-family: $gilroy;
     font-weight: 800;
     font-size: 18px;
     line-height: 24px;
+    text-align: center;
     text-transform: uppercase;
+    letter-spacing: 3.6px;
   }
 
-  &__nav-link--active {
+  &__nav-link--active,
+  &__nav-link:active {
     color: #f7e184;
+  }
+
+
+  &__nav-link--active::before,
+  &__nav-link:active::before {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 284px;
     background-color: #000;
   }
 
@@ -63,6 +84,7 @@
     font-family: $gilroy;
     font-weight: 800;
     font-size: 47px;
+    letter-spacing: 3.6px;
   }
 
   &__slide-content {

@@ -1,0 +1,76 @@
+.categories {
+  @include container;
+  padding-top: 25px;
+  padding-bottom: 40px;
+
+  &__list {
+    @include ul-reset;
+    display: flex;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  &__link {
+    @include link-reset;
+    width: 160px;
+  }
+
+  &__link-icon {
+    width: 160px;
+    height: 160px;
+    background-color: $yellow;
+  }
+
+  &__link-icon::before {
+    content: "";
+    display: block;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-image: url("../img/icon-virtual.svg");
+  }
+
+  &__link-icon--monopod::before {
+    background-position: 50% 100%;
+    background-image: url("../img/icon-monopod.svg");
+  }
+
+  &__link-icon--action-cam::before {
+    background-image: url("../img/icon-action-cam.svg");
+  }
+
+  &__link-icon--bracelet::before {
+    background-image: url("../img/icon-bracelet.svg");
+  }
+
+  &__link-icon--watch::before {
+    background-image: url("../img/icon-watch.svg");
+  }
+
+  &__link-icon--quadcopter::before {
+    background-image: url("../img/icon-quadcopter.svg");
+  }
+
+  &__link:hover &__link-icon {
+    background-color: $yellowBright;
+  }
+
+  &__link:active &__link-icon::before {
+    opacity: 0.3;
+  }
+
+  &__link:active &__link-title {
+    opacity: 0.3;
+  }
+
+  &__link-title {
+    display: block;
+    padding-top: 32px;
+    font-family: $gilroy;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

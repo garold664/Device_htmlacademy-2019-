@@ -1,0 +1,74 @@
+.services {
+  padding-top: 140px;
+  // background-color: #e5e5e5;
+  background: linear-gradient(to bottom, transparent, transparent 140px, #e5e5e5 140px);
+
+  &__container {
+    @include container;
+    display: flex;
+    margin-top: -48px;
+    background-color: transparent;
+  }
+
+  &__nav {
+    @include ul-reset;
+    position: relative;
+    width: 360px;
+    padding-top: 80px;
+    padding-bottom: 70px;
+    margin-right: 40px;
+  }
+
+  &__nav::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 7px;
+    top: 0;
+    bottom: 0;
+    right: 76px;
+    background-color: #000;
+  }
+  &__nav-link {
+    @include link-reset;
+    padding: 8px 162px 8px 20px;
+    font-family: $gilroy;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+
+  &__nav-link--active {
+    color: #f7e184;
+    background-color: #000;
+  }
+
+
+  &__slides {
+    @include ul-reset;
+    width: 760px;
+  }
+
+  &__slide {
+    display: none;
+  }
+
+  &__slide--active {
+    display: block;
+  }
+
+  &__slide-title {
+    @include reset;
+    font-family: $gilroy;
+    font-weight: 800;
+    font-size: 47px;
+  }
+
+  &__slide-content {
+    @include reset;
+    padding-top: 8px;
+    padding-right: 325px;
+    letter-spacing: 0.3px
+  }
+}

@@ -1,0 +1,63 @@
+.popup {
+  position: fixed;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  height: 555px;
+  width: 960px;
+  transform: translate(-50%, -50%);
+  padding: 92px 100px 80px;
+  background-color: #fff;
+
+  outline: 1px solid red;
+
+  &__form-row {
+    display: flex;
+  }
+  &__label {
+    display: block;
+    font-family: $gilroy;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  &__input {
+    @include input-reset;
+    padding: 16px 20px;
+    font-family: $opensans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    background-color: #f2f2f2;
+  }
+
+  &__input::placeholder {
+    color: rgba(70, 70, 70, 0.4);
+  }
+
+  &__label-text {
+    display: block;
+  }
+
+  &__btn {
+    border: none;
+    background-color: transparent;
+  }
+
+  &__close-btn {
+    @include button-reset;
+  }
+
+  &__close-btn::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    width: 55px;
+    height: 55px;
+    background-repeat: no-repeat;
+    background-image: url("../img/icon-modal-close.svg");
+  }
+}

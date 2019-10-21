@@ -1,6 +1,6 @@
 .services {
   padding-top: 140px;
-  // background-color: #e5e5e5;
+  padding-bottom: 65px;
   background: linear-gradient(to bottom, transparent, transparent 140px, #e5e5e5 140px);
 
   &__container {
@@ -15,7 +15,7 @@
     position: relative;
     width: 360px;
     padding-top: 80px;
-    padding-bottom: 70px;
+    padding-bottom: 48px;
     margin-right: 40px;
     margin-top: -50px;
   }
@@ -85,6 +85,33 @@
 
   &__slide {
     display: none;
+    position: relative;
+  }
+
+  &__slide::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 66px;
+    background-repeat: no-repeat;
+  }
+
+  &__slide--delivery::before {
+    top: 36px;
+    width: 136px;
+    height: 164px;
+    background-image: url("../img/icon-delivery.svg");
+  }
+  &__slide--warranty::before {
+    width: 171px;
+    height: 195px;
+    background-image: url("../img/icon-warranty.svg");
+  }
+  &__slide--credit::before {
+    width: 156px;
+    height: 188px;
+    background-image: url("../img/icon-credit.svg");
   }
 
   .no-js &__slide {
@@ -100,7 +127,7 @@
     font-family: $gilroy;
     font-weight: 800;
     font-size: 47px;
-    letter-spacing: 3.6px;
+    letter-spacing: 1.4px;
   }
 
   &__slide-content {

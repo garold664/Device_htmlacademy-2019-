@@ -52,8 +52,7 @@
 
   &__nav-link--active::before,
   &__nav-link:active ::before {
-    top: 0;
-    bottom: 0;
+    transform: scaleY(1);
     left: 0;
     width: 284px;
     background-color: #000;

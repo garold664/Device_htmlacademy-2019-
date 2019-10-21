@@ -17,10 +17,12 @@
     z-index: -1;
     left: 0;
     right: 0;
-    top: 40%;
-    bottom: 40%;
+    top: 0;
+    bottom: 0;
 
-    transition: all 0.2s ease-in;
+    transform: scaleY(0.2);
+
+    transition: transform 0.2s ease-in;
     background-color: $yellowBright;
   }
 
@@ -31,7 +33,6 @@
 
   &:hover::before {
     // background-image: linear-gradient(to bottom, $yellowBright 0%, $yellowBright 100%);
-    top: 0;
-    bottom: 0;
+    transform: scaleY(1);
   }
 }

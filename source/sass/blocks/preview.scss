@@ -53,15 +53,8 @@
   }
 
   &__link {
-    @include link-reset;
-    display: inline-block;
     padding: 8px 40px;
-    font-family: $gilroy;
-    font-weight: 800;
-    font-size: 18px;
-    text-transform: uppercase;
     letter-spacing: 4px;
-    line-height: 24px;
     // background-image: linear-gradient(to bottom, #fff, #fff 40%, $yellowBright 40%, $yellowBright 60%, #fff 60%);
   }
 

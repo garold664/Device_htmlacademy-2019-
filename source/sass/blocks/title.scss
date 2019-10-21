@@ -1,0 +1,14 @@
+.title {
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -40px;
+    width: 100px;
+    height: 7px;
+    background-color: #fff;
+  }
+
+}

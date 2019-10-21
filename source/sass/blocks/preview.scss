@@ -22,16 +22,6 @@
     margin-left: 40px;
   }
 
-  &__article-wrap::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 35px;
-    width: 100px;
-    height: 7px;
-    background-color: #fff;
-  }
-
   &__article-lead {
     position: relative;
     z-index: 5;

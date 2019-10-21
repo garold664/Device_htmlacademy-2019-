@@ -1,0 +1,127 @@
+.page-footer {
+  color: #fff;
+  background-color: #464646;
+
+  &__container {
+    @include container;
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__row--user-nav {
+  }
+
+  & .logo {
+    margin-top: 0;
+  }
+
+  & .user-nav {
+    margin: 0;
+    flex-grow: 0;
+    align-self: flex-start;
+  }
+
+  & .user-nav__item--user {
+    margin-right: 45px;
+    flex-grow: 0;
+  }
+
+  & .user-nav__link {
+    color: #fff;
+  }
+
+
+  &__row--info {
+    padding-top: 20px;
+  }
+
+  &__nav {
+    @include ul-reset;
+    display: flex;
+    padding-top: 5px;
+  }
+
+  &__nav-item {
+    margin-right: 35px;
+  }
+
+  &__nav-link {
+    @include link-reset;
+    font-family: $gilroy;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 3.6px;
+    color: #fff;
+  }
+
+  &__tel-number {
+    @include link-reset;
+    color: #fff;
+  }
+
+  &__row--socials {
+    padding-top: 60px;
+  }
+
+  &__bar {
+    align-self: center;
+    width: 80px;
+    height: 7px;
+    background-color: $yellowBright;
+  }
+
+  &__socials {
+    @include ul-reset;
+    display: flex;
+  }
+
+  &__socials-item {
+    margin: 0 11px;
+  }
+
+  &__socials-link::before {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+    background-repeat: no-repeat;
+  }
+  &__socials-link--facebook::before {
+    background-image: url("../img/icon-facebook.svg");
+  }
+  &__socials-link--instagram::before {
+    background-image: url("../img/icon-instagram.svg");
+  }
+  &__socials-link--twitter::before {
+    background-image: url("../img/icon-twitter.svg");
+  }
+
+  &__socials-link:hover::before {
+    opacity: 0.6;
+  }
+
+  &__socials-link:active::before {
+    opacity: 0.1;
+  }
+
+  &__madein-link {
+    margin-left: 55px;
+  }
+  &__madein-link::before {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 35px;
+    background-repeat: no-repeat;
+    background-image: url("../img/icon-htmlacademy.svg");
+  }
+}
+

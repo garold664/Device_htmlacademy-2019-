@@ -1,11 +1,18 @@
 .title {
+  @include reset;
   position: relative;
+  padding-top: 77px;
+  font-family: $gilroy;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 56px;
+  letter-spacing: 0.3px;
 
   &::before {
     content: "";
     display: block;
     position: absolute;
-    top: -40px;
+    top: 36px;
     width: 100px;
     height: 7px;
     background-color: #fff;

@@ -1,12 +1,11 @@
 .brands {
+  padding-top: 95px;
+  padding-bottom: 65px;
   &__list {
     @include ul-reset;
     @include container;
     display: flex;
     justify-content: space-between;
-    padding-top: 95px;
-    padding-bottom: 40px;
-    outline: 1px solid black;
   }
   &__link {
     display: block;

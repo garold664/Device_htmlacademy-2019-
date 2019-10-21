@@ -1,5 +1,91 @@
 .info {
   @include container;
+  display: flex;
+
+  &__col {
+    width: 560px;
+    padding-bottom: 80px;
+    outline: 1px solid black;
+  }
+
+  &__col:first-child {
+    padding-right: 88px;
+    margin-right: 40px;
+  }
 
 
+  &__title::before {
+    top: 30px;
+    width: 80px;
+    background-color: #000;
+  }
+
+  &__content {
+    padding-top: 40px;
+  }
+
+  &__paragraph {
+    @include reset;
+    padding-bottom: 30px;
+    // letter-spacing: -0.2px;
+  }
+
+
+  &__list {
+    @include ul-reset;
+    padding-top: 36px;
+  }
+
+  &__item {
+    position: relative;
+    padding-left: 35px;
+  }
+
+  &__item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    background-image: url("../img/icon-bullet.svg");
+  }
+
+  &__item-link {
+    @include link-reset;
+    font-family: $gilroy;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 40px;
+  }
+
+  &__item-link:hover {
+    opacity: 0.6;
+  }
+
+  &__item-link:active {
+    opacity: 0.3;
+  }
+
+  &__footer {
+    padding-top: 55px;
+  }
+
+  &__link {
+    width: 260px;
+    text-align: center;
+  }
+
+  &__maplink {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 13px;
+  }
+
+  &__map {
+    display: block;
+  }
 }

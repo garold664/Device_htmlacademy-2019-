@@ -31,7 +31,9 @@
   }
 
   .no-js &__wrap {
-    position: static;
+    position: relative;
+    top: auto;
+    left: auto;
     transform: none;
     margin: 0 auto;
   }
@@ -64,12 +66,13 @@
   &__input {
     @include input-reset;
     width: 100%;
-    padding: 16px 20px;
+    padding: 13px 17px;
+    border: 3px solid transparent;
     font-family: $opensans;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    background-color: #f2f2f2;
+    background-color: rgba(229, 229, 229, 0.5);
   }
 
   &__input--textarea {
@@ -78,6 +81,19 @@
 
   &__input::placeholder {
     color: rgba(70, 70, 70, 0.4);
+  }
+
+  &__input:hover {
+    background-color: rgba(229, 229, 229, 0.8);
+  }
+
+  &__input:focus {
+    border: 3px solid $yellow;
+    outline: none;
+  }
+
+  &__input:invalid {
+    background-color: #f6dada;
   }
 
   &__btn {
@@ -99,7 +115,16 @@
     display: block;
     width: 55px;
     height: 55px;
+    opacity: 0.5;
     background-repeat: no-repeat;
     background-image: url("../img/icon-modal-close.svg");
+  }
+
+  &__close-btn:hover {
+    opacity: 1;
+  }
+
+  &__close-btn:active {
+    opacity: 0.3;
   }
 }

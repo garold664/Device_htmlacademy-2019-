@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Каталог товаров интернет-магазина Device</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body class="catalog-page no-js">
+  <header class="page-header">
+    <div class="page-header__container">
+      <a class="logo"><img src="img/icon-logo.svg" alt="DEVICE"></a>
+
+      <div class="page-header__row">
+        <form class="page-header__search" action="#" method="GET">
+          <label class="page-header__search-icon" for="search-input">
+            <span class="visuallyhidden">Поиск по сайту</span>
+          </label>
+          <input class="page-header__search-input" id="search-input" name="search-input" type="text" placeholder="Поиск по сайту">
+          <button class="page-header__search-submit" type="submit">
+            Найти
+          </button>
+        </form>
+        <ul class="page-header__user-nav user-nav">
+          <li class="user-nav__item user-nav__item--user">
+            <a class="user-nav__link" href="#">
+              <span class="user-nav__icon">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                   width="13px" height="12px" viewBox="0 0 13 12" enable-background="new 0 0 13 12" xml:space="preserve">
+                <path fill="#272525" d="M0.032,12h12.937c-0.163-2.643-2.074-4.837-4.671-5.543C9.306,5.846,9.985,4.75,9.985,3.485
+                  C9.985,1.561,8.425,0,6.5,0S3.015,1.561,3.015,3.485c0,1.264,0.68,2.361,1.688,2.972C2.106,7.163,0.194,9.357,0.032,12z"/>
+                </svg>
+              </span>
+              Войти
+            </a>
+          </li>
+          <li class="user-nav__item">
+            <a class="user-nav__link" href="#">
+              <span class="user-nav__icon">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                   width="10px" height="10px" viewBox="0 0 10 10" enable-background="new 0 0 10 10" xml:space="preserve">
+                <rect x="8" y="2" width="1.984" height="8"/>
+                <rect y="3" width="1.984" height="7"/>
+                <rect x="4" width="2" height="10"/>
+                </svg>
+              </span>
+              Сравнить
+            </a>
+          </li>
+          <li class="user-nav__item">
+            <a class="user-nav__link" href="#">
+              <span class="user-nav__icon">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                   width="12px" height="12px" viewBox="0 0 12 12" enable-background="new 0 0 12 12" xml:space="preserve">
+                <g>
+                  <path d="M11.864,3.017c-0.082-0.098-0.203-0.154-0.327-0.154H9.225V4.09c0,0.563-0.484,1.022-1.08,1.022
+                    c-0.594,0-1.078-0.458-1.078-1.022V2.863H4.909V4.09c0,0.563-0.485,1.022-1.08,1.022c-0.595,0-1.078-0.458-1.078-1.022V2.863H0.438
+                    c-0.125,0-0.243,0.056-0.327,0.154C0.028,3.115-0.012,3.245,0.003,3.375l0.776,7.134c0.015,0.806,0.642,1.455,1.411,1.455h7.595
+                    c0.77,0,1.396-0.649,1.411-1.455l0.776-7.134C11.987,3.245,11.946,3.115,11.864,3.017z"/>
+                  <path d="M3.829,4.499c0.239,0,0.433-0.184,0.433-0.409V1.84c0-0.632,0.672-1.022,1.295-1.022h1.079
+                    c0.655,0,1.078,0.401,1.078,1.022v2.25c0,0.225,0.194,0.409,0.431,0.409c0.239,0,0.433-0.184,0.433-0.409V1.84
+                    C8.577,0.773,7.761,0,6.636,0H5.557C4.367,0,3.398,0.826,3.398,1.84v2.25C3.398,4.315,3.592,4.499,3.829,4.499z"/>
+                </g>
+                </svg>
+              </span>
+              Корзина
+            </a>
+          </li>
+        </ul>
+      </div> <!-- end of .page-header__row -->
+
+      <nav class="page-nav">
+        <ul class="page-nav__list">
+          <li class="page-nav__item page-nav__item--dropdown">
+            <a class="page-nav__link page-nav__link--dropdown" href="#">Каталог товаров</a>
+            <ul class="page-nav__sublist">
+              <li class="page-nav__subitem">
+                <a class="page-nav__link" href="#">Виртуальная реальность</a>
+              </li>
+              <li class="page-nav__subitem">
+                <a class="page-nav__link" href="#">Моноподы для селфи</a>
+              </li>
+              <li class="page-nav__subitem">
+                <a class="page-nav__link" href="#">Экшн-камеры</a>
+              </li>
+              <li class="page-nav__subitem">
+                <a class="page-nav__link" href="#">Фитнес-браслеты</a>
+              </li>
+              <li class="page-nav__subitem">
+                <a class="page-nav__link" href="#">Умные часы</a>
+              </li>
+              <li class="page-nav__subitem">
+                <a class="page-nav__link" href="#">Квадрокоптеры</a>
+              </li>
+            </ul>
+          </li>
+          <li class="page-nav__item">
+            <a class="page-nav__link" href="#">Доставка</a>
+          </li>
+          <li class="page-nav__item">
+            <a class="page-nav__link" href="#">Гарантия</a>
+          </li>
+          <li class="page-nav__item">
+            <a class="page-nav__link" href="#">Контакты</a>
+          </li>
+
+        </ul>
+      </nav>
+
+    </div> <!-- end of .page-header__container -->
+
+  </header>
+
+
+
+  <main class="main">
+    <div class="main__container">
+      <h1 class="main__title">Моноподы для селфи</h1>
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="#">
+            Главная
+          </a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="#">
+            Каталог товаров
+          </a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link">
+            Моноподы для селфи
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <section class="catalog">
+      <h2 class="catalog__title visuallyhidden">Каталог товаров</h2>
+      <div class="catalog__container">
+        <div class="catalog__col">
+          <form class="filter" action="#" method="POST">
+            <h3 class="catalog__subtitle">Фильтр</h3>
+
+            <fieldset class="filter__set">
+              <legend class="filter__legend">Стоимость</legend>
+              <div class="filter__range">
+
+              </div>
+            </fieldset>
+
+            <fieldset class="filter__set">
+              <legend class="filter__legend">Цвет</legend>
+              <input class="filter__checkbox" type="checkbox" name="color" id="black" checked>
+              <label for="black">Черный</label>
+
+              <input class="filter__checkbox" type="checkbox" name="color" id="white">
+              <label for="white">Белый</label>
+
+              <input class="filter__checkbox" type="checkbox" name="color" id="blue" checked>
+              <label for="blue">Синий</label>
+
+              <input class="filter__checkbox" type="checkbox" name="color" id="red" checked>
+              <label for="red">Красный</label>
+
+              <input class="filter__checkbox" type="checkbox" name="color" id="pink">
+              <label for="pink">Розовый</label>
+
+            </fieldset>
+
+            <fieldset class="filter__set">
+              <legend class="filter__legend">Bluetooth</legend>
+
+              <input class="filter__radio" type="radio" name="bluetooth" id="bluetooth-yes" checked>
+              <label for="bluetooth-yes">Есть</label>
+
+              <input class="filter__radio" type="radio" name="bluetooth" id="bluetooth-no">
+              <label for="bluetooth-no">Нет</label>
+
+            </fieldset>
+
+            <button class="filter__submit btn" type="submit">
+              Показать
+            </button>
+
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+
+
+  <footer class="page-footer">
+    <div class="page-footer__container">
+      <div class="page-footer__row page-footer__row--user-nav">
+        <a class="logo"><img src="img/icon-logo-yellow.svg" alt="DEVICE"></a>
+
+        <ul class="page-header__user-nav user-nav">
+          <li class="user-nav__item user-nav__item--user">
+            <a class="user-nav__link" href="#">
+              <span class="user-nav__icon">
+                <svg fill="#ffc600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                   width="13px" height="12px" viewBox="0 0 13 12" enable-background="new 0 0 13 12" xml:space="preserve">
+                <path d="M0.032,12h12.937c-0.163-2.643-2.074-4.837-4.671-5.543C9.306,5.846,9.985,4.75,9.985,3.485
+                  C9.985,1.561,8.425,0,6.5,0S3.015,1.561,3.015,3.485c0,1.264,0.68,2.361,1.688,2.972C2.106,7.163,0.194,9.357,0.032,12z"/>
+                </svg>
+              </span>
+              Войти
+            </a>
+          </li>
+          <li class="user-nav__item">
+            <a class="user-nav__link" href="#">
+              <span class="user-nav__icon">
+                <svg fill="#ffc600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                   width="10px" height="10px" viewBox="0 0 10 10" enable-background="new 0 0 10 10" xml:space="preserve">
+                <rect x="8" y="2" width="1.984" height="8"/>
+                <rect y="3" width="1.984" height="7"/>
+                <rect x="4" width="2" height="10"/>
+                </svg>
+              </span>
+              Сравнить
+            </a>
+          </li>
+          <li class="user-nav__item">
+            <a class="user-nav__link" href="#">
+              <span class="user-nav__icon">
+                <svg fill="#ffc600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                   width="12px" height="12px" viewBox="0 0 12 12" enable-background="new 0 0 12 12" xml:space="preserve">
+                <g>
+                  <path d="M11.864,3.017c-0.082-0.098-0.203-0.154-0.327-0.154H9.225V4.09c0,0.563-0.484,1.022-1.08,1.022
+                    c-0.594,0-1.078-0.458-1.078-1.022V2.863H4.909V4.09c0,0.563-0.485,1.022-1.08,1.022c-0.595,0-1.078-0.458-1.078-1.022V2.863H0.438
+                    c-0.125,0-0.243,0.056-0.327,0.154C0.028,3.115-0.012,3.245,0.003,3.375l0.776,7.134c0.015,0.806,0.642,1.455,1.411,1.455h7.595
+                    c0.77,0,1.396-0.649,1.411-1.455l0.776-7.134C11.987,3.245,11.946,3.115,11.864,3.017z"/>
+                  <path d="M3.829,4.499c0.239,0,0.433-0.184,0.433-0.409V1.84c0-0.632,0.672-1.022,1.295-1.022h1.079
+                    c0.655,0,1.078,0.401,1.078,1.022v2.25c0,0.225,0.194,0.409,0.431,0.409c0.239,0,0.433-0.184,0.433-0.409V1.84
+                    C8.577,0.773,7.761,0,6.636,0H5.557C4.367,0,3.398,0.826,3.398,1.84v2.25C3.398,4.315,3.592,4.499,3.829,4.499z"/>
+                </g>
+                </svg>
+              </span>
+              Корзина
+            </a>
+          </li>
+        </ul>
+      </div> <!-- end of .page-footer__row -->
+      <div class="page-footer__row page-footer__row--info">
+        <div class="page-footer__address">
+          г. Москва, ул. Строителей, 15
+        </div>
+        <ul class="page-footer__nav">
+          <li class="page-footer__nav-item">
+            <a class="page-footer__nav-link" href="#">Доставка</a>
+          </li>
+          <li class="page-footer__nav-item">
+            <a class="page-footer__nav-link" href="#">Гарантия</a>
+          </li>
+          <li class="page-footer__nav-item">
+            <a class="page-footer__nav-link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <div class="page-footer__tel">
+          Тел.: <a href="tel:+74954959595" class="page-footer__tel-number">+7(495) 495-95-95</a>
+        </div>
+      </div> <!-- end of .page-footer__row -->
+      <div class="page-footer__row page-footer__row--socials">
+        <span class="page-footer__bar"></span>
+        <ul class="page-footer__socials">
+          <li class="page-footer__socials-item">
+            <a class="page-footer__socials-link page-footer__socials-link--facebook" href="#">
+              <span class="visuallyhidden">Device в Facebook</span>
+            </a>
+          </li>
+          <li class="page-footer__socials-item">
+            <a class="page-footer__socials-link page-footer__socials-link--instagram" href="#">
+              <span class="visuallyhidden">Device в Instagram</span>
+            </a>
+          </li>
+          <li class="page-footer__socials-item">
+            <a class="page-footer__socials-link page-footer__socials-link--twitter" href="#">
+              <span class="visuallyhidden">Device в Twitter</span>
+            </a>
+          </li>
+        </ul>
+        <a class="page-footer__madein-link" href="#">
+          <span class="visuallyhidden">HTML Academy</span>
+        </a>
+      </div> <!-- end of .page-footer__row -->
+    </div>
+  </footer>
+
+  <div class="popup" id="popup">
+    <div class="popup__overlay">
+    </div>
+    <div class="popup__wrap">
+      <form class="popup__form" action="#" method="POST">
+        <div class="popup__form-row">
+          <label class="popup__label popup__label--name">
+            <span class="popup__label-text">Ваше имя:</span>
+            <input class="popup__input" type="text" name="user-name" placeholder="Имя Фамилия">
+          </label>
+          <label class="popup__label popup__label--email">
+            <span class="popup__label-text">Ваш e-mail:</span>
+            <input class="popup__input" type="email" name="user-email" placeholder="email@example.com">
+          </label>
+        </div>
+        <div class="popup__form-row">
+          <label class="popup__label">
+            <span class="popup__label-text">Текст письма:</span>
+            <textarea class="popup__input popup__input--textarea" type="text" name="user-message" placeholder="В свободной форме"></textarea>
+          </label>
+        </div>
+        <footer class="popup__footer">
+          <button class="popup__btn btn" type="submit">
+            Отправить
+          </button>
+        </footer>
+      </form>
+      <button class="popup__close-btn" type="button">
+        <span class="visuallyhidden">Close popup</span>
+      </button>
+    </div>
+
+  </div>
+
+  <div class="popup popup--map" id="map-popup">
+    <div class="popup__overlay"></div>
+    <div class="popup__wrap">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1590.3627917563272!2d37.52838782350995!3d55.68702958412187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1571746784351!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      <button class="popup__close-btn" type="button">
+        <span class="visuallyhidden">Close popup</span>
+      </button>
+
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

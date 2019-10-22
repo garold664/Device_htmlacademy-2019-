@@ -16,7 +16,7 @@
           <label class="page-header__search-icon" for="search-input">
             <span class="visuallyhidden">Поиск по сайту</span>
           </label>
-          <input class="page-header__search-input" id="search-input" type="text" placeholder="Поиск по сайту">
+          <input class="page-header__search-input" id="search-input" name="search-input" type="text" placeholder="Поиск по сайту">
           <button class="page-header__search-submit" type="submit">
             Найти
           </button>
@@ -518,17 +518,17 @@
         <div class="popup__form-row">
           <label class="popup__label popup__label--name">
             <span class="popup__label-text">Ваше имя:</span>
-            <input class="popup__input" type="text" placeholder="Имя Фамилия" required>
+            <input class="popup__input" type="text" name="user-name" placeholder="Имя Фамилия" required>
           </label>
           <label class="popup__label popup__label--email">
             <span class="popup__label-text">Ваш e-mail:</span>
-            <input class="popup__input" type="email" placeholder="email@example.com" required>
+            <input class="popup__input" type="email" name="user-email" placeholder="email@example.com" required>
           </label>
         </div>
         <div class="popup__form-row">
           <label class="popup__label">
             <span class="popup__label-text">Текст письма:</span>
-            <textarea class="popup__input popup__input--textarea" type="text" placeholder="В свободной форме" required></textarea>
+            <textarea class="popup__input popup__input--textarea" type="text" name="user-message" placeholder="В свободной форме" required></textarea>
           </label>
         </div>
         <footer class="popup__footer">

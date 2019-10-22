@@ -1,18 +1,33 @@
 .popup {
   position: fixed;
-  z-index: 100;
-  top: 50%;
-  left: 50%;
-  height: 555px;
-  width: 960px;
-  transform: translate(-50%, -50%);
-  padding: 92px 100px 80px;
-  background-color: #fff;
+  z-index: 10;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
 
-  outline: 1px solid red;
+  &__wrap {
+    position: fixed;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    width: 960px;
+    transform: translate(-50%, -50%);
+    padding: 92px 100px 80px;
+    background-color: #fff;
+    box-shadow: 0px 10px 20px 0px rgba(4, 6, 6, 0.2);
+
+    // outline: 1px solid red;
+  }
+
 
   &__form-row {
+    padding-bottom: 34px;
+  }
+  &__form-row:first-child {
     display: flex;
+    justify-content: space-between;
   }
   &__label {
     display: block;
@@ -22,8 +37,19 @@
     line-height: 24px;
   }
 
+  &__label--name,
+  &__label--email {
+    width: 360px;
+  }
+
+  &__label-text {
+    display: block;
+    padding-bottom: 7px;
+  }
+
   &__input {
     @include input-reset;
+    width: 100%;
     padding: 16px 20px;
     font-family: $opensans;
     font-weight: 400;
@@ -32,29 +58,31 @@
     background-color: #f2f2f2;
   }
 
+  &__input--textarea {
+    height: 156px;
+  }
+
   &__input::placeholder {
     color: rgba(70, 70, 70, 0.4);
   }
 
-  &__label-text {
-    display: block;
-  }
-
   &__btn {
+    width: 200px;
     border: none;
+    cursor: pointer;
     background-color: transparent;
   }
 
   &__close-btn {
-    @include button-reset;
-  }
-
-  &__close-btn::before {
-    content: "";
-    display: block;
     position: absolute;
     top: 22px;
     right: 22px;
+    @include button-reset;
+  }
+
+  &__close-btn {
+    content: "";
+    display: block;
     width: 55px;
     height: 55px;
     background-repeat: no-repeat;

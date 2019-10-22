@@ -511,33 +511,34 @@
   </footer>
 
   <div class="popup">
-    <form class="popup__form" action="#" method="POST">
-      <div class="popup__form-row">
-        <label class="popup__label">
-          <span class="popup__label-text">Ваше имя:</span>
-          <input class="popup__input" type="text" placeholder="Имя Фамилия">
-        </label>
-        <label class="popup__label">
-          <span class="popup__label-text">Ваш e-mail:</span>
-          <input class="popup__input" type="email" placeholder="email@example.com">
-        </label>
-      </div>
-      <div class="popup__form-row">
-        <label class="popup__label">
-          <span class="popup__label-text">Текст письма:</span>
-          <textarea class="popup__input" type="text" placeholder="Имя Фамилия">
-          </textarea>
-        </label>
-      </div>
-      <footer class="popup__footer">
-        <button class="popup__btn btn" type="submit">
-          Отправить
-        </button>
-      </footer>
-    </form>
-    <button class="popup__close-btn" type="button">
-      <span class="visuallyhidden">Close popup</span>
-    </button>
+    <div class="popup__wrap">
+      <form class="popup__form" action="#" method="POST">
+        <div class="popup__form-row">
+          <label class="popup__label popup__label--name">
+            <span class="popup__label-text">Ваше имя:</span>
+            <input class="popup__input" type="text" placeholder="Имя Фамилия">
+          </label>
+          <label class="popup__label popup__label--email">
+            <span class="popup__label-text">Ваш e-mail:</span>
+            <input class="popup__input" type="email" placeholder="email@example.com">
+          </label>
+        </div>
+        <div class="popup__form-row">
+          <label class="popup__label">
+            <span class="popup__label-text">Текст письма:</span>
+            <textarea class="popup__input popup__input--textarea" type="text" placeholder="В свободной форме"></textarea>
+          </label>
+        </div>
+        <footer class="popup__footer">
+          <button class="popup__btn btn" type="submit">
+            Отправить
+          </button>
+        </footer>
+      </form>
+      <button class="popup__close-btn" type="button">
+        <span class="visuallyhidden">Close popup</span>
+      </button>
+    </div>
   </div>
 
   <script src="js/script.js"></script>

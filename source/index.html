@@ -401,7 +401,7 @@
         <h2 class="info__title title">Контакты</h2>
         <div class="info__content">
           <p class="info__paragraph">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-          <a class="info__maplink" href="#">
+          <a class="info__maplink" href="#map-popup" id="open-map-popup">
             <img class="info__map" src="img/map.jpg" alt="Санкт-Петербург, ул. Строителей, 15">
           </a>
         </div>
@@ -542,6 +542,17 @@
       </button>
     </div>
 
+  </div>
+
+  <div class="popup popup--map" id="map-popup">
+    <div class="popup__overlay"></div>
+    <div class="popup__wrap">
+
+      <button class="popup__close-btn" type="button">
+        <span class="visuallyhidden">Close popup</span>
+      </button>
+
+    </div>
   </div>
 
   <script src="js/script.js"></script>

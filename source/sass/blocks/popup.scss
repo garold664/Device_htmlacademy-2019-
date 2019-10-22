@@ -141,4 +141,10 @@
   &__close-btn:active {
     opacity: 0.3;
   }
+
+  &--map &__wrap {
+    // display: block;
+    height: 560px;
+    padding: 0;
+  }
 }

@@ -49,11 +49,10 @@ try {
   isStorageSupport = false;
 }
 
-var closePopupHandler = function() {
+var closePopupHandler = function(popup) {
   if (popup.classList.contains('popup--show')) {
     popup.classList.remove('popup--show');
     popup.classList.remove('popup--invalid');
-
   }
 };
 
@@ -74,7 +73,7 @@ popup.addEventListener('click', function (evt) {
      (evt.target.classList.contains('popup__overlay')))  {
 
     evt.preventDefault();
-    closePopupHandler();
+    closePopupHandler(popup);
   }
 
 });
@@ -82,7 +81,7 @@ popup.addEventListener('click', function (evt) {
 window.addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27)  {
     evt.preventDefault();
-    closePopupHandler();
+    closePopupHandler(popup);
   }
 });
 
@@ -96,3 +95,25 @@ form.addEventListener('submit', function (evt) {
   }
 });
 
+// map
+
+
+var openMapPopupBtn = document.querySelector('#open-map-popup');
+var mapPopup = document.querySelector('#map-popup');
+
+
+openMapPopupBtn.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  mapPopup.classList.add('popup--show');
+
+});
+
+mapPopup.addEventListener('click', function (evt) {
+  if ((evt.target.classList.contains('popup__close-btn')) ||
+     (evt.target.classList.contains('popup__overlay')))  {
+
+    evt.preventDefault();
+    closePopupHandler(mapPopup);
+  }
+
+});

@@ -1,4 +1,5 @@
 .popup {
+  display: none;
   position: fixed;
   z-index: 10;
   top: 0;
@@ -6,6 +7,16 @@
   left: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.7);
+
+  .no-js & {
+    display: block;
+    position: static;
+  }
+
+
+  &--active {
+    display: block;
+  }
 
   &__wrap {
     position: fixed;
@@ -17,10 +28,13 @@
     padding: 92px 100px 80px;
     background-color: #fff;
     box-shadow: 0px 10px 20px 0px rgba(4, 6, 6, 0.2);
-
-    // outline: 1px solid red;
   }
 
+  .no-js &__wrap {
+    position: static;
+    transform: none;
+    margin: 0 auto;
+  }
 
   &__form-row {
     padding-bottom: 34px;

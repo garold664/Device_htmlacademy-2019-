@@ -1,22 +1,5 @@
 .popup {
   display: none;
-  position: fixed;
-  z-index: 10;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-
-  .no-js & {
-    display: block;
-    position: static;
-  }
-
-
-  &--active {
-    display: block;
-  }
 
   &__wrap {
     position: fixed;
@@ -30,10 +13,28 @@
     box-shadow: 0px 10px 20px 0px rgba(4, 6, 6, 0.2);
   }
 
-  .no-js &__wrap {
-    position: relative;
-    top: auto;
-    left: auto;
+  .no-js & {
+    display: block;
+    position: static;
+  }
+
+
+  &--show {
+    display: block;
+  }
+
+  &__overlay {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    // background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .no-js &__overlay {
+    position: static;
     transform: none;
     margin: 0 auto;
   }
@@ -92,9 +93,9 @@
     outline: none;
   }
 
-  &__input:invalid {
-    background-color: #f6dada;
-  }
+  // &__input:invalid {
+  //   background-color: #f6dada;
+  // }
 
   &__btn {
     width: 200px;

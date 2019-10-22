@@ -61,6 +61,14 @@
     color: #fff;
   }
 
+  &__nav-link:hover {
+    opacity: 0.6;
+  }
+
+  &__nav-link:active {
+    opacity: 0.1;
+  }
+
   &__tel-number {
     @include link-reset;
     color: #fff;
@@ -122,6 +130,14 @@
     height: 35px;
     background-repeat: no-repeat;
     background-image: url("../img/icon-htmlacademy.svg");
+  }
+
+  &__madein-link:hover::before {
+    opacity: 0.6;
+  }
+
+  &__madein-link:active::before {
+    opacity: 0.1;
   }
 }
 

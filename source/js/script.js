@@ -52,6 +52,8 @@ try {
 var closePopupHandler = function() {
   if (popup.classList.contains('popup--show')) {
     popup.classList.remove('popup--show');
+    popup.classList.remove('popup--invalid');
+
   }
 };
 
@@ -88,7 +90,7 @@ form.addEventListener('submit', function (evt) {
   console.log('submit');
   if (!userName.value || !userEmail.value) {
     evt.preventDefault();
-    console.log('Нужно ввести имя и email');
+    popup.classList.add('popup--invalid');
   } else if (isStorageSupport) {
     localStorage.setItem('user-name', userName.value)
   }

@@ -30,6 +30,11 @@
     // animation-fill-mode: forwards;
   }
 
+  &--invalid &__wrap {
+    animation-name: shake;
+    animation-duration: 0.6s;
+  }
+
   &__overlay {
     display: none;
     position: fixed;
@@ -101,9 +106,9 @@
     outline: none;
   }
 
-  // &__input:invalid {
-  //   background-color: #f6dada;
-  // }
+  &--invalid &__input {
+    background-color: #f6dada;
+  }
 
   &__btn {
     width: 200px;

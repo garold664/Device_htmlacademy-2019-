@@ -72,10 +72,14 @@
     opacity: 1;
   }
 
-  &__label:hover::before,
+  &__label:hover::before {
+    opacity: 0.6;
+  }
+
+
   &__checkbox:focus + &__label::before,
   &__radio:focus + &__label::before {
-    opacity: 0.6;
+    outline: 1px solid rgb(77, 144, 254);
   }
 
   &__radio {

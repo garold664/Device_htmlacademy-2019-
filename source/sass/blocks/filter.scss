@@ -1,0 +1,87 @@
+.filter {
+  &__set {
+    @include reset;
+    padding-right: 70px;
+    padding-bottom: 40px;
+    border: none;
+  }
+
+  & .catalog__subtitle {
+    margin-bottom: 73px;
+  }
+
+  &__legend {
+    display: block;
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 25px;
+    border-top: 2px solid black;
+    font-family: $gilroy;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  &__range {
+    min-height: 40px;
+    outline: 1px solid black;
+  }
+
+  &__checkbox {
+    @include visuallyhidden;
+  }
+
+
+  &__checkbox-label,
+  &__radio-label {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 2;
+    cursor: pointer;
+  }
+
+  &__checkbox-label:last-child,
+  &__radio-label:last-child
+   {
+    margin-bottom: 0;
+  }
+  &__checkbox-label::before,
+  &__radio-label::before {
+    content: "";
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    margin-right: 16px;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-image: url("../img/icon-checkbox-off.svg");
+  }
+
+  &__checkbox:checked + &__checkbox-label::before {
+    width: 27px;
+    margin-right: 12px;
+    background-image: url("../img/icon-checkbox-on.svg");
+  }
+
+
+  &__radio {
+    @include visuallyhidden;
+  }
+
+  &__radio-label::before {
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/icon-radio-off.svg");
+  }
+
+  &__radio:checked + &__radio-label::before {
+    background-image: url("../img/icon-radio-on.svg");
+  }
+
+  &__submit {
+    width: 200px;
+    margin-right: 70px;
+  }
+
+}

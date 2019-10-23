@@ -183,9 +183,71 @@
             </button>
 
           </form>
+        </div> <!-- end  of .catalog__col -->
+
+        <div class="catalog__col">
+          <div class="catalog__sort">
+            <h3 class="catalog__subtitle">Сортировка</h3>
+            <ul class="catalog__sort-list">
+              <li class="catalog__sort-item">
+                <a class="catalog__sort-link catalog__sort-link--active" href="#">По цене</a>
+              </li>
+              <li class="catalog__sort-item">
+                <a class="catalog__sort-link" href="#">По типу</a>
+              </li>
+              <li class="catalog__sort-item">
+                <a class="catalog__sort-link" href="#">По популярности</a>
+              </li>
+            </ul>
+
+            <div class="catalog__sort-dir">
+              <a class="catalog__sort-arrow" href="#" class="catalog__sort-arrow">
+                <span class="visuallyhidden">По возростанию</span>
+              </a>
+              <a class="catalog__sort-arrow" href="#" class="catalog__sort-arrow catalog__sort-arrow--down">
+                <span class="visuallyhidden">По убыванию</span>
+              </a>
+            </div>
+
+          </div> <!-- end of .catalog__sort -->
+
+          <ul class="catalog__list">
+            <li class="catalog__item">
+              <figure class="catalog__fig">
+                <div class="catalog__fig-wrap">
+                  <img src="img/product-1.jpg" class="catalog__fig-img">
+                  <div class="catalog__fig-hover">
+                    <button class="catalog__fig-buybtn btn">В корзину</button>
+                    <button class="catalog__fig-btn">Добавить к сравнению</button>
+                  </div>
+                </div>
+                <footer class="catalog__fig-footer">
+                  <figcaption class="catalog__fig-caption"></figcaption>
+                  <div class="catalog__fig-price"></div>
+                </footer>
+              </figure>
+            </li>
+          </ul>
+
+          <div class="catalog__pages">
+            <a class="catalog__pages-dir" href="#">Назад</a>
+            <ul class="catalog__pages-list">
+              <li class="catalog__pages-item">
+                <a class="catalog__pages-link catalog__pages-link--active" href="#">1</a>
+              </li>
+              <li class="catalog__pages-item">
+                <a class="catalog__pages-link" href="#">2</a>
+              </li>
+              <li class="catalog__pages-item">
+                <a class="catalog__pages-link" href="#">3</a>
+              </li>
+            </ul>
+            <a class="catalog__pages-dir" href="#">Вперед</a>
+          </div>
+
         </div>
       </div>
-    </section>
+    </section> <!-- end of .catalog -->
   </main>
 
 

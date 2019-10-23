@@ -10,6 +10,9 @@
   letter-spacing: 3.6px;
   text-transform: uppercase;
   padding: 8px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
   &::before {
     content: "";
     display: block;

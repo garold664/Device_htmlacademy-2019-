@@ -161,9 +161,6 @@
   }
   &__fig {
     @include reset;
-  }
-
-  &__fig--new {
     position: relative;
   }
 
@@ -186,9 +183,17 @@
     color: rgba(0, 0, 0, 0.2);
   }
 
+  &__fig-wrap {
+    position: relative;
+  }
+
+  &__fig-img {
+    display: block;
+  }
+
   &__fig-footer {
     display: flex;
-    padding-top: 25px;
+    padding-top: 34px;
   }
   &__fig-caption {
     width: 260px;
@@ -209,8 +214,41 @@
 
   &__fig-hover {
     display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(238, 238, 238, 0.7);
   }
 
+  &__fig:hover  &__fig-hover{
+    display: flex;
+  }
+
+  &__fig-buybtn {
+    margin-top: 40px;
+    width: 200px;
+  }
+
+  &__fig-btn {
+    @include button-reset;
+    margin-top: 14px;
+    font-size: 13px;
+    line-height: 1.5;
+    opacity: 0.5;
+  }
+
+  &__fig-btn:hover {
+    opacity: 1;
+  }
+
+  &__fig-btn:active {
+    opacity: 0.2;
+  }
 
 
 }

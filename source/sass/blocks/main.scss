@@ -1,0 +1,16 @@
+.main {
+  &__container {
+    @include container;
+    width: 1080px;
+  }
+
+  &__title {
+    @include reset;
+    padding-top: 35px;
+    font-family: $gilroy;
+    font-weight: 800;
+    font-size: 47px;
+    line-height: 48px;
+    letter-spacing: 0.7px;
+  }
+}

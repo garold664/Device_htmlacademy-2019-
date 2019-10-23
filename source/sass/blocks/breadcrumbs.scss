@@ -1,0 +1,49 @@
+.breadcrumbs {
+  @include ul-reset;
+  display: flex;
+  padding-top: 22px;
+  padding-bottom: 40px;
+
+  &__item {
+    position: relative;
+    padding-right: 40px;
+  }
+
+  &__item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 7px;
+    background-repeat: no-repeat;
+    background-image: url("../img/icon-bread-arrow.svg");
+  }
+
+  &__item:last-child::before {
+    content: none;
+  }
+
+  &__item:last-child {
+    padding-right: 0;
+  }
+
+  &__link {
+    @include link-reset;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000;
+    opacity: 0.3;
+  }
+
+  &__link[href]:hover {
+    opacity: 0.6;
+  }
+
+  &__link[href]:active {
+    opacity: 0.1;
+  }
+
+}

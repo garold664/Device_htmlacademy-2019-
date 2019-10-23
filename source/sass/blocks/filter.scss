@@ -32,8 +32,7 @@
   }
 
 
-  &__checkbox-label,
-  &__radio-label {
+  &__label {
     display: block;
     margin-bottom: 12px;
     font-size: 14px;
@@ -41,13 +40,10 @@
     cursor: pointer;
   }
 
-  &__checkbox-label:last-child,
-  &__radio-label:last-child
-   {
+  &__label:last-child {
     margin-bottom: 0;
   }
-  &__checkbox-label::before,
-  &__radio-label::before {
+  &__label::before {
     content: "";
     display: inline-block;
     width: 23px;
@@ -58,24 +54,42 @@
     background-image: url("../img/icon-checkbox-off.svg");
   }
 
-  &__checkbox:checked + &__checkbox-label::before {
+  &__checkbox:checked + &__label--checkbox::before,
+  &__label--checkbox:active::before {
     width: 27px;
     margin-right: 12px;
     background-image: url("../img/icon-checkbox-on.svg");
   }
 
 
+  &__radio:disabled + &__label,
+  &__checkbox:disabled + &__label {
+    opacity: 0.25;
+  }
+
+  &__radio:disabled + &__label:hover::before,
+  &__checkbox:disabled + &__label:hover::before {
+    opacity: 1;
+  }
+
+  &__label:hover::before,
+  &__checkbox:focus + &__label::before,
+  &__radio:focus + &__label::before {
+    opacity: 0.6;
+  }
+
   &__radio {
     @include visuallyhidden;
   }
 
-  &__radio-label::before {
+  &__label--radio::before {
     width: 25px;
     height: 25px;
     background-image: url("../img/icon-radio-off.svg");
   }
 
-  &__radio:checked + &__radio-label::before {
+  &__radio:checked + &__label--radio::before,
+  &__label--radio:active::before {
     background-image: url("../img/icon-radio-on.svg");
   }
 

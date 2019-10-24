@@ -13,6 +13,8 @@ var minify = require("gulp-csso");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 
+var uglify = require("gulp-uglify");
+
 var clean = require('del');
 // var clean = require('gulp-clean');
 
@@ -29,7 +31,9 @@ function style(done) {
     ]))
     .pipe(gulp.dest("build/css"))
     .pipe(minify())
-    .pipe(rename("style.min.css"))
+    .pipe(rename({
+      suffix: ".min"
+    }))
     .pipe(sourcemaps.write("./"))
     .pipe(gulp.dest("build/css"))
     .pipe(server.reload({stream: true}));
@@ -69,7 +73,7 @@ function cleanAll(done) {
 
 function copyAll(done) {
 
-  return gulp.src(["source/fonts/**/*.{woff,woff2}", "source/img/**","source/js/**/*.{js,css}", "source/*.html"], {base: "source"})
+  return gulp.src(["source/fonts/**/*.{woff,woff2}", "source/img/**", "source/*.html"], {base: "source"})
     .pipe(gulp.dest("build"));
 
   done();
@@ -93,8 +97,12 @@ function copyHtml(done) {
 
 function copyJS(done) {
 
-// заодно копируются файлы плагинов (js, css)
-  gulp.src(["source/js/**/*{js,css}"], {base: "source"})
+  gulp.src(["source/js/**/*{js}"], {base: "source"})
+    .pipe(gulp.dest("build"))
+    .pipe(uglify())
+    .pipe(rename({
+      suffix: ".min"
+    }))
     .pipe(gulp.dest("build"))
     .pipe(server.reload({stream: true}));
 
@@ -129,6 +137,6 @@ exports.copyHtml = copyHtml;
 exports.copyJS = copyJS;
 exports.serve = serve;
 
-exports.build = gulp.series(cleanAll, copyAll, style, images);
+exports.build = gulp.series(cleanAll, copyAll, copyJS, style, images);
 
 // gulp.task("build", gulp.series("clean", "copy", "style", "images"));

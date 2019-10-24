@@ -31,7 +31,6 @@
     background-repeat: no-repeat;
   }
 
-
   &__item--user &__link::before {
     width: 13px;
     height: 12px;
@@ -51,7 +50,6 @@
     background-image: url("../img/icon-cart.svg");
   }
 
-
   .page-footer &__item--user &__link::before {
     background-image: url("../img/icon-user-yellow.svg");
   }
@@ -65,4 +63,24 @@
 
     background-image: url("../img/icon-cart-yellow.svg");
   }
+
+  &__link--logout {
+    display: inline-block;
+    margin-left: 18px;
+    opacity: 0.3;
+  }
+
+  &__link--logout:hover {
+    opacity: 0.6;
+  }
+
+  &__link--logout:active {
+    opacity: 1;
+  }
+
+  &__link--logout::before {
+    content: none;
+  }
+
+
 }

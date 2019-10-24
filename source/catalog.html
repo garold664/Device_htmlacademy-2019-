@@ -143,21 +143,23 @@
 
             <fieldset class="filter__set">
               <legend class="filter__legend">Стоимость</legend>
-              <div class="filter__range">
+              <div class="filter__range range">
 
-                <div id="my-slider" se-min="-100" se-step="1" se-min-value="40" se-max-value="40" se-max="100" class="slider">
-                  <div class="slider__touch-left">
-                    <span class="slider__touch-span"></span>
+                <div id="my-slider" se-min="0" se-step="1" se-min-value="0" se-max-value="5000" se-max="8800" class="range__slider">
+                  <div class="range__touch-left">
+                    <span class="range__touch-span"></span>
+                    <span class="range__touch-left-value">от 0</span>
                   </div>
-                  <div class="slider__touch-right">
-                    <span class="slider__touch-span"></span>
+                  <div class="range__touch-right">
+                    <span class="range__touch-span"></span>
+                    <span class="range__touch-right-value">до 5000</span>
                   </div>
-                  <div class="slider__line">
-                    <span class="slider__line-span"></span>
+                  <div class="range__line">
+                    <span class="range__line-span"></span>
                   </div>
                 </div>
 
-                <div id="result">Min: 0 Max: 140</div>
+                <!-- <div id="result">Min: 0 Max: 140</div> -->
 
               </div> <!-- end of .filter__range -->
             </fieldset>

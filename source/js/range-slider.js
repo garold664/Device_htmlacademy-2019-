@@ -1,13 +1,15 @@
 // THIS IS THE RANGE SLIDER LOGIC DO NOT CHANGE !!
+// https://codepen.io/zebresel/pen/xGLYOM
+
 var ZBRangeSlider = function(id) {
   var self = this;
   var startX = 0, x = 0;
 
   // retrieve touch button
   var slider     = document.getElementById(id)
-  var touchLeft  = slider.querySelector('.slider__touch-left');
-  var touchRight = slider.querySelector('.slider__touch-right');
-  var lineSpan   = slider.querySelector('.slider__line span');
+  var touchLeft  = slider.querySelector('.range__touch-left');
+  var touchRight = slider.querySelector('.range__touch-right');
+  var lineSpan   = slider.querySelector('.range__line span');
 
   // get some properties
   var min   = parseFloat(slider.getAttribute('se-min'));
@@ -240,13 +242,17 @@ var newRangeSlider = new ZBRangeSlider('my-slider');
 newRangeSlider.onChange = function(min, max)
 {
   console.log(min, max, this);
-  document.getElementById('result').innerHTML = 'Min: ' + min + ' Max: ' + max;
+  document.querySelector(".range__touch-left-value").innerText = 'от ' + min;
+  document.querySelector(".range__touch-right-value").innerText = 'от ' + max;
+  // document.getElementById('result').innerText = 'Min: ' + min + ' Max: ' + max;
 }
 
 newRangeSlider.didChanged = function(min, max)
 {
   console.log(min,max, this);
-  document.getElementById('result').innerHTML = 'Min: ' + min + ' Max: ' + max;
+  document.querySelector(".range__touch-left-value").innerText = 'от ' + min;
+  document.querySelector(".range__touch-right-value").innerText = 'от ' + max;
+  // document.getElementById('result').innerText = 'Min: ' + min + ' Max: ' + max;
 }
 
 // call reset if needed

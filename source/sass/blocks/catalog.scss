@@ -193,6 +193,10 @@
   }
 
   &__fig-footer {
+  }
+
+  &__fig-link {
+    @include link-reset;
     display: flex;
     padding-top: 34px;
   }

@@ -94,15 +94,17 @@ function copyHtml(done) {
   done();
 }
 
-
 function copyJS(done) {
 
-  gulp.src(["source/js/**/*{js}"], {base: "source"})
+// заодно копируются файлы плагинов (js, css)
+  gulp.src(["source/js/**/*.js"], {base: "source"})
     .pipe(gulp.dest("build"))
+    .pipe(sourcemaps.init())
     .pipe(uglify())
     .pipe(rename({
       suffix: ".min"
     }))
+    .pipe(sourcemaps.write("./"))
     .pipe(gulp.dest("build"))
     .pipe(server.reload({stream: true}));
 

@@ -47,10 +47,10 @@
   &__label::before {
     content: "";
     display: inline-block;
+    vertical-align: middle;
     width: 23px;
     height: 23px;
     margin-right: 16px;
-    vertical-align: middle;
     background-repeat: no-repeat;
     background-image: url("../img/icon-checkbox-off.svg");
   }

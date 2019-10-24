@@ -112,6 +112,7 @@
   &__sort-arrow {
     @include link-reset;
     display: inline-block;
+    vertical-align: middle;
     margin-right: 12px;
     opacity: 0.2;
   }
@@ -193,18 +194,24 @@
     display: block;
   }
 
-  &__fig-link {
+  &__fig-caption {
     @include link-reset;
     display: flex;
     padding-top: 34px;
   }
-  &__fig-caption {
+  &__fig-title {
+    @include reset;
     width: 260px;
     font-family: $gilroy;
     font-weight: 800;
     font-size: 18px;
     line-height: 24px;
     letter-spacing: 0.3px;
+  }
+
+  &__fig-link {
+    @include link-reset;
+    font: inherit;
   }
 
   &__fig-price {

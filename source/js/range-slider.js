@@ -12,20 +12,20 @@ var ZBRangeSlider = function(id) {
   var lineSpan   = slider.querySelector('.range__line span');
 
   // get some properties
-  var min   = parseFloat(slider.getAttribute('se-min'));
-  var max   = parseFloat(slider.getAttribute('se-max'));
+  var min   = parseFloat(slider.getAttribute('data-se-min'));
+  var max   = parseFloat(slider.getAttribute('data-se-max'));
 
   // retrieve default values
   var defaultMinValue = min;
-  if(slider.hasAttribute('se-min-value'))
+  if(slider.hasAttribute('data-se-min-value'))
   {
-    defaultMinValue = parseFloat(slider.getAttribute('se-min-value'));
+    defaultMinValue = parseFloat(slider.getAttribute('data-se-min-value'));
   }
   var defaultMaxValue = max;
 
-  if(slider.hasAttribute('se-max-value'))
+  if(slider.hasAttribute('data-se-max-value'))
   {
-    defaultMaxValue = parseFloat(slider.getAttribute('se-max-value'));
+    defaultMaxValue = parseFloat(slider.getAttribute('data-se-max-value'));
   }
 
   // check values are correct
@@ -46,9 +46,9 @@ var ZBRangeSlider = function(id) {
 
   var step  = 0.0;
 
-  if (slider.getAttribute('se-step'))
+  if (slider.getAttribute('data-se-step'))
   {
-    step  = Math.abs(parseFloat(slider.getAttribute('se-step')));
+    step  = Math.abs(parseFloat(slider.getAttribute('data-se-step')));
   }
 
   // normalize flag
@@ -70,7 +70,7 @@ var ZBRangeSlider = function(id) {
     touchLeft.style.left = Math.ceil(ratio * (slider.offsetWidth - (touchLeft.offsetWidth + normalizeFact))) + 'px';
     lineSpan.style.marginLeft = touchLeft.offsetLeft + 'px';
     lineSpan.style.width = (touchRight.offsetLeft - touchLeft.offsetLeft) + 'px';
-    slider.setAttribute('se-min-value', minValue);
+    slider.setAttribute('data-se-min-value', minValue);
   }
 
   self.setMaxValue = function(maxValue)
@@ -79,7 +79,7 @@ var ZBRangeSlider = function(id) {
     touchRight.style.left = Math.ceil(ratio * (slider.offsetWidth - (touchLeft.offsetWidth + normalizeFact)) + normalizeFact) + 'px';
     lineSpan.style.marginLeft = touchLeft.offsetLeft + 'px';
     lineSpan.style.width = (touchRight.offsetLeft - touchLeft.offsetLeft) + 'px';
-    slider.setAttribute('se-max-value', maxValue);
+    slider.setAttribute('data-se-max-value', maxValue);
   }
 
   // initial reset
@@ -172,12 +172,12 @@ var ZBRangeSlider = function(id) {
     if(slider.getAttribute('on-change'))
     {
       var fn = new Function('min, max', slider.getAttribute('on-change'));
-      fn(slider.getAttribute('se-min-value'), slider.getAttribute('se-max-value'));
+      fn(slider.getAttribute('data-se-min-value'), slider.getAttribute('data-se-max-value'));
     }
 
     if(self.onChange)
     {
-      self.onChange(slider.getAttribute('se-min-value'), slider.getAttribute('se-max-value'));
+      self.onChange(slider.getAttribute('data-se-min-value'), slider.getAttribute('data-se-max-value'));
     }
 
   }
@@ -197,12 +197,12 @@ var ZBRangeSlider = function(id) {
     if(slider.getAttribute('did-changed'))
     {
       var fn = new Function('min, max', slider.getAttribute('did-changed'));
-      fn(slider.getAttribute('se-min-value'), slider.getAttribute('se-max-value'));
+      fn(slider.getAttribute('data-se-min-value'), slider.getAttribute('data-se-max-value'));
     }
 
     if(self.didChanged)
     {
-      self.didChanged(slider.getAttribute('se-min-value'), slider.getAttribute('se-max-value'));
+      self.didChanged(slider.getAttribute('data-se-min-value'), slider.getAttribute('data-se-max-value'));
     }
   }
 
@@ -224,8 +224,8 @@ var ZBRangeSlider = function(id) {
       maxValue = step * multi;
     }
 
-    slider.setAttribute('se-min-value', minValue);
-    slider.setAttribute('se-max-value', maxValue);
+    slider.setAttribute('data-se-min-value', minValue);
+    slider.setAttribute('data-se-max-value', maxValue);
   }
 
   // link events

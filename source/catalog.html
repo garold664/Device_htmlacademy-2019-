@@ -119,7 +119,7 @@
               <legend class="filter__legend">Стоимость</legend>
               <div class="filter__range range">
 
-                <div id="my-slider" se-min="0" se-step="1" se-min-value="0" se-max-value="5000" se-max="8800" class="range__slider">
+                <div id="my-slider" data-se-min="0" data-se-step="1" data-se-min-value="0" data-se-max-value="5000" data-se-max="8800" class="range__slider">
                   <div class="range__touch-left">
                     <div class="range__touch-circle">
                       <span class="range__touch-span"></span>
@@ -215,12 +215,10 @@
                     <button class="catalog__fig-btn">Добавить к сравнению</button>
                   </div>
                 </div>
-                <footer class="catalog__fig-footer">
-                  <a class="catalog__fig-link" href="#">
-                    <figcaption class="catalog__fig-caption">Любительская селфи-палка</figcaption>
-                    <div class="catalog__fig-price">500 руб.</div>
-                  </a>
-                </footer>
+                <figcaption class="catalog__fig-caption">
+                  <h3 class="catalog__fig-title"><a href="#" class="catalog__fig-link">Любительская селфи-палка</a></h3>
+                  <div class="catalog__fig-price">500 руб.</div>
+                </figcaption>
               </figure>
             </li>
 
@@ -233,12 +231,10 @@
                     <button class="catalog__fig-btn">Добавить к сравнению</button>
                   </div>
                 </div>
-                <footer class="catalog__fig-footer">
-                  <a href="#" class="catalog__fig-link">
-                    <figcaption class="catalog__fig-caption">Профессиональная <br> селфи-палка</figcaption>
-                    <div class="catalog__fig-price">1 500 руб.</div>
-                  </a>
-                </footer>
+                <figcaption class="catalog__fig-caption">
+                  <h3 class="catalog__fig-title"><a href="#" class="catalog__fig-link">Профессиональная <br> селфи-палка</a></h3>
+                  <div class="catalog__fig-price">1 500 руб.</div>
+                </figcaption>
               </figure>
             </li>
 
@@ -251,12 +247,10 @@
                     <button class="catalog__fig-btn">Добавить к сравнению</button>
                   </div>
                 </div>
-                <footer class="catalog__fig-footer">
-                  <a href="#" class="catalog__fig-link">
-                    <figcaption class="catalog__fig-caption">Непотопляемая селфи-палка</figcaption>
-                    <div class="catalog__fig-price">2 500 руб.</div>
-                  </a>
-                </footer>
+                <figcaption class="catalog__fig-caption">
+                  <h3 class="catalog__fig-title"><a href="#" class="catalog__fig-link">Непотопляемая селфи-палка</a></h3>
+                  <div class="catalog__fig-price">2 500 руб.</div>
+                </figcaption>
               </figure>
             </li>
 
@@ -269,12 +263,10 @@
                     <button class="catalog__fig-btn">Добавить к сравнению</button>
                   </div>
                 </div>
-                <footer class="catalog__fig-footer">
-                  <a href="#" class="catalog__fig-link">
-                    <figcaption class="catalog__fig-caption">Селфи-палка &laquo;Следуй за мной&raquo;</figcaption>
-                    <div class="catalog__fig-price">4 900 руб.</div>
-                  </a>
-                </footer>
+                <figcaption class="catalog__fig-caption">
+                  <h3 class="catalog__fig-title"><a href="#" class="catalog__fig-link">Селфи-палка &laquo;Следуй за мной&raquo;</a></h3>
+                  <div class="catalog__fig-price">4 900 руб.</div>
+                </figcaption>
               </figure>
             </li>
 
@@ -374,51 +366,6 @@
       </div> <!-- end of .page-footer__row -->
     </div>
   </footer>
-
-  <div class="popup" id="popup">
-    <div class="popup__overlay">
-    </div>
-    <div class="popup__wrap">
-      <form class="popup__form" action="#" method="POST">
-        <div class="popup__form-row">
-          <label class="popup__label popup__label--name">
-            <span class="popup__label-text">Ваше имя:</span>
-            <input class="popup__input" type="text" name="user-name" placeholder="Имя Фамилия">
-          </label>
-          <label class="popup__label popup__label--email">
-            <span class="popup__label-text">Ваш e-mail:</span>
-            <input class="popup__input" type="email" name="user-email" placeholder="email@example.com">
-          </label>
-        </div>
-        <div class="popup__form-row">
-          <label class="popup__label">
-            <span class="popup__label-text">Текст письма:</span>
-            <textarea class="popup__input popup__input--textarea" type="text" name="user-message" placeholder="В свободной форме"></textarea>
-          </label>
-        </div>
-        <footer class="popup__footer">
-          <button class="popup__btn btn" type="submit">
-            Отправить
-          </button>
-        </footer>
-      </form>
-      <button class="popup__close-btn" type="button">
-        <span class="visuallyhidden">Close popup</span>
-      </button>
-    </div>
-
-  </div>
-
-  <div class="popup popup--map" id="map-popup">
-    <div class="popup__overlay"></div>
-    <div class="popup__wrap">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1590.3627917563272!2d37.52838782350995!3d55.68702958412187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1571746784351!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-      <button class="popup__close-btn" type="button">
-        <span class="visuallyhidden">Close popup</span>
-      </button>
-
-    </div>
-  </div>
 
   <script src="js/script.min.js"></script>
   <script src="js/range-slider.min.js"></script>

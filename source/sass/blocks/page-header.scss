@@ -85,7 +85,6 @@
   &__search-submit:hover,
   &__search-submit:focus,
   &__search-submit:active {
-    display: inline-block;
     opacity: 1;
     pointer-events: auto;
     background-color: #000;
@@ -95,7 +94,6 @@
   &__search-submit:active::before,
   &__search-submit:focus::before {
     content: "";
-    display: inline-block;
     position: absolute;
     left: 0;
     right: 0;
@@ -111,7 +109,6 @@
   &__search-input:focus + &__search-submit {
     opacity: 1;
     pointer-events: auto;
-    display: inline-block;
   }
 
 

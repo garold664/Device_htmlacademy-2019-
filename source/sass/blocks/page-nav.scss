@@ -78,11 +78,8 @@
   }
 
   &__subitem:last-child {
+    flex-basis: 100%;
     margin-right: 0;
-  }
-
-  &__subitem:nth-last-child(2) {
-    padding-bottom: 30px;
   }
 
   &__item--dropdown:hover  &__sublist {

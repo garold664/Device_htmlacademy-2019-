@@ -23,14 +23,46 @@
     opacity: 0.3;
   }
 
-  &__icon {
+  &__link::before {
+    content: "";
     display: inline-block;
     vertical-align: baseline;
     margin-right: 6px;
+    background-repeat: no-repeat;
   }
 
 
-  &__item--user &__icon {
+  &__item--user &__link::before {
+    width: 13px;
+    height: 12px;
     margin-right: 10px;
+    background-image: url("../img/icon-user.svg");
+  }
+
+  &__item--compare &__link::before {
+    width: 10px;
+    height: 10px;
+    background-image: url("../img/icon-compare.svg");
+  }
+
+  &__item--cart &__link::before {
+    width: 12px;
+    height: 12px;
+    background-image: url("../img/icon-cart.svg");
+  }
+
+
+  .page-footer &__item--user &__link::before {
+    background-image: url("../img/icon-user-yellow.svg");
+  }
+
+  .page-footer &__item--compare &__link::before {
+
+    background-image: url("../img/icon-compare-yellow.svg");
+  }
+
+  .page-footer &__item--cart &__link::before {
+
+    background-image: url("../img/icon-cart-yellow.svg");
   }
 }

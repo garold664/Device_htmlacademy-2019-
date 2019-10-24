@@ -192,9 +192,6 @@
     display: block;
   }
 
-  &__fig-footer {
-  }
-
   &__fig-link {
     @include link-reset;
     display: flex;
@@ -230,7 +227,7 @@
     background-color: rgba(238, 238, 238, 0.7);
   }
 
-  &__fig:hover  &__fig-hover{
+  &__fig:hover  &__fig-hover {
     display: flex;
   }
 

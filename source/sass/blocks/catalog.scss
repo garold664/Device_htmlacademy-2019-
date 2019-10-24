@@ -294,6 +294,17 @@
 
   &__pages-link {
     @include link-reset;
+    opacity: 0.3;
+  }
+
+
+  &__pages-link:hover {
+    opacity: 0.6;
+  }
+
+  &__pages-link:active,
+  &__pages-link--active {
+    opacity: 1;
   }
 
 }

@@ -145,7 +145,21 @@
               <legend class="filter__legend">Стоимость</legend>
               <div class="filter__range">
 
-              </div>
+                <div id="my-slider" se-min="-100" se-step="1" se-min-value="40" se-max-value="40" se-max="100" class="slider">
+                  <div class="slider__touch-left">
+                    <span class="slider__touch-span"></span>
+                  </div>
+                  <div class="slider__touch-right">
+                    <span class="slider__touch-span"></span>
+                  </div>
+                  <div class="slider__line">
+                    <span class="slider__line-span"></span>
+                  </div>
+                </div>
+
+                <div id="result">Min: 0 Max: 140</div>
+
+              </div> <!-- end of .filter__range -->
             </fieldset>
 
             <fieldset class="filter__set">
@@ -446,5 +460,6 @@
   </div>
 
   <script src="js/script.js"></script>
+  <script src="js/range-slider.js"></script>
 </body>
 </html>

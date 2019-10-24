@@ -13,8 +13,6 @@ servicesNav.addEventListener('click', function (evt) {
   var linkActiveClass = 'services__nav-link--active';
   if (target.classList.contains(linkClass)) {
     evt.preventDefault();
-    console.log('currentTarget = ', evt.currentTarget);
-    console.log('Target = ', target);
 
     servicesNav.querySelector('.' + linkActiveClass).classList.remove(linkActiveClass);
     target.classList.add(linkActiveClass);

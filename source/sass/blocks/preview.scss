@@ -90,7 +90,7 @@
 
 
   &__radio {
-    display: none;
+    @include visuallyhidden;
   }
   &__radio:checked + &__article {
     display: flex;
@@ -132,6 +132,11 @@
     height: 4px;
     border-radius: 50%;
     border: 1px solid #000;
+  }
+  &__radio[id="article-1"]:focus ~ &__nav > &__nav-btn[for="article-1"],
+  &__radio[id="article-2"]:focus ~ &__nav > &__nav-btn[for="article-2"],
+  &__radio[id="article-3"]:focus ~ &__nav > &__nav-btn[for="article-3"] {
+    outline: $focusOutline;
   }
 
   &__nav-btn:hover {

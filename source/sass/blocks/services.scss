@@ -58,18 +58,9 @@
     background-color: #000;
   }
 
-  &__nav-link--active:hover::before
-  // ,&__nav-link--active:focus::before
-   {
-    background-color: $yellowBright;
+  &__nav-link--active {
+    cursor: default;
   }
-
-  &__nav-link--active:hover
-  // ,&__nav-link--active:focus
-  {
-    color: #000;
-  }
-
 
   &__slides {
     @include ul-reset;

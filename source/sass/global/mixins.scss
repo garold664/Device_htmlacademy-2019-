@@ -6,7 +6,6 @@
   }
 }
 
-
 @mixin hide-text {
   // font-size: 0;
   // box-shadow: none;
@@ -17,15 +16,11 @@
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-
-
 }
-
 
 @mixin reset {
   margin: 0;
   padding: 0;
-  list-style-type: none;
 }
 
 @mixin ul-reset {

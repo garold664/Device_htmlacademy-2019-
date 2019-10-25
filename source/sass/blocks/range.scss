@@ -17,6 +17,9 @@
     top: 1px;
   }
 
+  &__touch-right {
+    left: 57%;
+  }
   &__touch-circle {
     height: 20px;
     width: 20px;
@@ -76,7 +79,7 @@
   &__line-span {
     display: block;
     height: 100%;
-    width: 0%;
+    width: 57%;
     background: #91c92f;
   }
 }

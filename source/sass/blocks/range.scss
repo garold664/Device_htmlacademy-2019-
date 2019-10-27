@@ -1,14 +1,10 @@
 .range {
 
-  &__slider {
-    display: block;
-    position: relative;
-    // height: 36px;
-    padding-bottom: 25px;
-    margin-left: -5px;
-    width: 100%;
-    user-select:none;
-  }
+  display: block;
+  position: relative;
+  margin-left: -5px;
+  user-select: none;
+
 
   &__touch-left, &__touch-right {
     display: block;

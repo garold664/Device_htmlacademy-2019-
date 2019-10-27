@@ -7,6 +7,9 @@
 *.zip
 *.sublime*
 *.css
+review.odt
+.~lock.review.odt#
+
 node_modules/
 build/
 psd/

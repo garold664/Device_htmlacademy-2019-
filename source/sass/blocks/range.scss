@@ -32,7 +32,8 @@
       transform: scale(1.1, 1.1);
     }
   }
-  &__touch-span {
+  &__touch-circle::before {
+    content: "";
     display: block;
     position: absolute;
     top: 50%;

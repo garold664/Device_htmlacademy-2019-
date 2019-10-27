@@ -65,7 +65,7 @@
     justify-content: flex-start;
     align-content: flex-start;
     box-sizing: content-box;
-    height: 130px;
+    height: 110px;
     padding: 20px 60px 30px;
     background-color: $yellow;
   }
@@ -79,6 +79,7 @@
   &__subitem:last-child {
     flex-basis: 100%;
     margin-right: 0;
+    margin-left: 10px;
   }
 
   &__item--dropdown:hover  &__sublist {

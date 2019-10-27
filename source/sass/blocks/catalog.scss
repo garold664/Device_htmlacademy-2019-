@@ -240,12 +240,14 @@
   }
 
   &__fig-buybtn {
+    display: block;
+    text-align: center;
     margin-top: 40px;
     width: 200px;
   }
 
   &__fig-btn {
-    @include button-reset;
+    @include link-reset;
     margin-top: 14px;
     font-size: 13px;
     line-height: 1.5;

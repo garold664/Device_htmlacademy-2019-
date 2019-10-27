@@ -26,12 +26,9 @@
     padding-bottom: 40px;
   }
 
-
-
   &__checkbox {
     @include visuallyhidden;
   }
-
 
   &__label {
     display: block;

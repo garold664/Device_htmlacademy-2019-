@@ -6,11 +6,17 @@
   &__list {
     @include ul-reset;
     display: flex;
+    flex-wrap: wrap;
   }
 
-  &__item:not(:last-child) {
+
+  &__item {
     position: relative;
     margin-right: 40px;
+  }
+
+  &__item:nth-child(6n) {
+    margin-right: 0;
   }
 
   &__item::before {

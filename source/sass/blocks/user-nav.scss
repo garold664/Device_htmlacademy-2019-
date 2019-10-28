@@ -1,5 +1,6 @@
 .user-nav {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   flex-grow: 1;
   @include ul-reset;
@@ -12,6 +13,8 @@
     flex-grow: 1;
   }
   &__link {
+    position: relative;
+    padding-left: 25px;
     text-decoration: none;
     font-weight: 300;
     color: #000;
@@ -25,16 +28,18 @@
 
   &__link::before {
     content: "";
-    display: inline-block;
-    vertical-align: baseline;
-    margin-right: 6px;
+    position: absolute;
+    left: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
     background-repeat: no-repeat;
   }
 
   &__item--user &__link::before {
     width: 13px;
     height: 12px;
-    margin-right: 10px;
+    left: 0;
     background-image: url("../img/icon-user.svg");
   }
 

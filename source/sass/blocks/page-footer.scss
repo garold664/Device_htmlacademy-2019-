@@ -43,6 +43,9 @@
   &__nav {
     @include ul-reset;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
     padding-top: 5px;
   }
 

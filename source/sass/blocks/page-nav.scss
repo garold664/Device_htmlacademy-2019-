@@ -3,6 +3,7 @@
   &__list {
     @include ul-reset;
     display: flex;
+    flex-wrap: wrap;
 
     padding-top: 26px;
   }
@@ -14,9 +15,6 @@
   &__item:last-child {
     margin-left: 75px;
     margin-right: -4px;
-  }
-  &__item--dropdown {
-    margin-right: auto;
   }
 
   &__link {

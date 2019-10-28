@@ -5,8 +5,13 @@
     @include ul-reset;
     @include container;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
   }
+
+  &__item:not(:nth-child(4n)) {
+    margin-right: 40px;
+  }
+
   &__link {
     display: block;
     width: 260px;

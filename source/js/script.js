@@ -54,17 +54,23 @@ var closePopupHandler = function(popup) {
   }
 };
 
+
 openPopupBtn.addEventListener('click', function (evt) {
   evt.preventDefault();
   popup.classList.add('popup--show');
 
   if (storage) {
     userName.value = storage;
-    userEmail.focus();
+    setTimeout(function() {
+      userEmail.focus();
+    }, 250);
   } else {
-    userName.focus();
+    setTimeout(function() {
+      userName.focus();
+    }, 250);
   }
 });
+
 
 popup.addEventListener('click', function (evt) {
   if ((evt.target.classList.contains('popup__close-btn')) ||

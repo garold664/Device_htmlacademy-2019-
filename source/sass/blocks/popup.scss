@@ -94,6 +94,11 @@
     height: 156px;
   }
 
+
+  &__input:-ms-input-placeholder {
+    color: rgba(70, 70, 70, 0.4);
+  }
+
   &__input::placeholder {
     color: rgba(70, 70, 70, 0.4);
   }

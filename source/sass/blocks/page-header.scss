@@ -53,6 +53,10 @@
     border-color: #000;
   }
 
+  &__search-input:-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
   &__search-input::placeholder {
     color: rgba(0, 0, 0, 0.3);
   }

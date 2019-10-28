@@ -123,14 +123,6 @@
   &__madein-link {
     margin-left: 55px;
   }
-  &__madein-link::before {
-    content: "";
-    display: block;
-    width: 27px;
-    height: 34px;
-    // background-repeat: no-repeat;
-    background-image: url("../img/icon-htmlacademy.svg");
-  }
 
   &__madein-link:hover::before {
     opacity: 0.6;

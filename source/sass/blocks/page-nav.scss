@@ -12,6 +12,10 @@
     margin-right: 34px;
   }
 
+  &__item--dropdown {
+    flex-grow: 1;
+  }
+
   &__item:last-child {
     margin-left: 75px;
     margin-right: -4px;

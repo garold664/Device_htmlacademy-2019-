@@ -1,6 +1,7 @@
 .breadcrumbs {
   @include ul-reset;
   display: flex;
+  flex-wrap: wrap;
   padding-top: 22px;
   padding-bottom: 44px;
 

@@ -24,12 +24,6 @@
     font-weight: 300;
     color: #000;
   }
-  &__link:hover {
-    opacity: 0.6;
-  }
-  &__link:active {
-    opacity: 0.3;
-  }
 
   &__link::before {
     content: "";
@@ -58,6 +52,22 @@
     width: 12px;
     height: 12px;
     background-image: url("../img/icon-cart.svg");
+  }
+
+  &__link:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &__link:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  &__link:hover::before {
+    opacity: 0.6;
+  }
+
+  &__link:active::before {
+    opacity: 0.3;
   }
 
   .page-footer &__item--user &__link::before {

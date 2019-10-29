@@ -1,0 +1,25 @@
+html {
+  height: 100%;
+}
+
+body {
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    bottom: 0;
+    width: 1440px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.4;
+    background-color: #000;
+  }
+
+  &.catalog-page::after {
+    background-image: url("../../psd/preview/device-catalog.jpg");
+  }
+}

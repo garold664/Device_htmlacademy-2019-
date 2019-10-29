@@ -138,12 +138,12 @@
     margin-left: 55px;
   }
 
-  &__madein-link:hover::before {
+  &__madein-link:hover {
     opacity: 0.6;
   }
 
-  &__madein-link:active::before {
-    opacity: 0.1;
+  &__madein-link:active {
+    opacity: 0.3;
   }
 }
 

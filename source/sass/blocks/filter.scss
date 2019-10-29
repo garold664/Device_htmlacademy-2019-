@@ -59,25 +59,24 @@
     background-image: url("../img/icon-checkbox-on.svg");
   }
 
+  &__checkbox:focus + &__label::before,
+  &__radio:focus + &__label::before {
+    outline: 1px solid rgb(77, 144, 254);
+  }
 
-  &__radio:disabled + &__label,
-  &__checkbox:disabled + &__label {
+  &__radio:disabled + &__label::before,
+  &__checkbox:disabled + &__label::before {
     opacity: 0.25;
   }
 
-  &__radio:disabled + &__label:hover::before,
-  &__checkbox:disabled + &__label:hover::before {
-    opacity: 1;
+  &__radio:disabled + &__label,
+  &__checkbox:disabled + &__label {
+    color: #a6a6a6;
+    pointer-events: none;
   }
 
   &__label:hover::before {
     opacity: 0.6;
-  }
-
-
-  &__checkbox:focus + &__label::before,
-  &__radio:focus + &__label::before {
-    outline: 1px solid rgb(77, 144, 254);
   }
 
   &__radio {

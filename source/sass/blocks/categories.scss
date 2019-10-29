@@ -19,64 +19,70 @@
     margin-right: 0;
   }
 
-  &__item::before {
+
+  &__link {
+    position: relative;
+    @include link-reset;
+    display: block;
+    width: 160px;
+  }
+
+  // &__link-icon {
+  //   width: 160px;
+  //   height: 160px;
+  //   pointer-events: none;
+  // }
+
+  &__link::before {
     content: "";
     display: block;
-    position: absolute;
     z-index: -1;
     width: 160px;
     height: 160px;
     background-color: $yellow;
   }
 
-  &__link {
-    @include link-reset;
+  &__link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
     display: block;
-    width: 160px;
-  }
-
-  &__link-icon {
     width: 160px;
     height: 160px;
-    pointer-events: none;
-  }
-
-  &__link-icon::before {
-    content: "";
-    display: block;
-    height: 100%;
     pointer-events: none;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-image: url("../img/icon-virtual.svg");
   }
 
-  &__link-icon--monopod::before {
+  &__link--monopod::after {
     background-position: 50% 100%;
     background-image: url("../img/icon-monopod.svg");
   }
 
-  &__link-icon--action-cam::before {
+  &__link--action-cam::after {
     background-image: url("../img/icon-action-cam.svg");
   }
 
-  &__link-icon--bracelet::before {
+  &__link--bracelet::after {
     background-image: url("../img/icon-bracelet.svg");
   }
 
-  &__link-icon--watch::before {
+  &__link--watch::after {
     background-image: url("../img/icon-watch.svg");
   }
 
-  &__link-icon--quadcopter::before {
+  &__link--quadcopter::after {
     background-image: url("../img/icon-quadcopter.svg");
   }
 
-  &__item:hover::before  {
+  &__link:hover::before  {
     background-color: $yellowBright;
   }
 
-  &__link:active {
+  &__link:active &__link-title,
+  &__link:active::after {
     opacity: 0.3;
   }
 

@@ -1,5 +1,5 @@
-document.body.classList.remove('no-js');
-
+var body = document.body;
+body.classList.remove('no-js');
 
 // services Slider
 var servicesNav = document.querySelector('.services__nav');
@@ -27,7 +27,6 @@ servicesNav.addEventListener('click', function (evt) {
 
 });
 
-
 // Popup
 
 var openPopupBtn = document.querySelector('#open-popup');
@@ -36,7 +35,6 @@ var form = popup.querySelector('.popup__form');
 var userName = form.querySelector('[name=user-name');
 var userEmail = form.querySelector('[name=user-email');
 var closePopupBtn = popup.querySelector('.popup__close-btn');
-
 
 var isStorageSupport = true;
 var storage = '';
@@ -49,14 +47,29 @@ try {
 
 var closePopupHandler = function(popup) {
   if (popup.classList.contains('popup--show')) {
+
+    var scrollY = body.style.top;
+    body.style.position = '';
+    body.style.top = '';
+  body.style.paddingRight = '0px';
+
+    window.scrollTo(0, parseInt(scrollY || '0') * -1);
+
     popup.classList.remove('popup--show');
     popup.classList.remove('popup--invalid');
   }
 };
 
-
 openPopupBtn.addEventListener('click', function (evt) {
   evt.preventDefault();
+
+  // var scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+  var scrollY = window.scrollY;
+  console.log(scrollY);
+  body.style.position = 'fixed';
+  body.style.paddingRight = '15px';
+  body.style.top = '-'  + scrollY + 'px';
+
   popup.classList.add('popup--show');
 
   if (storage) {
@@ -70,7 +83,6 @@ openPopupBtn.addEventListener('click', function (evt) {
     }, 250);
   }
 });
-
 
 popup.addEventListener('click', function (evt) {
   if ((evt.target.classList.contains('popup__close-btn')) ||
@@ -101,10 +113,8 @@ form.addEventListener('submit', function (evt) {
 
 // map
 
-
 var openMapPopupBtn = document.querySelector('#open-map-popup');
 var mapPopup = document.querySelector('#map-popup');
-
 
 openMapPopupBtn.addEventListener('click', function (evt) {
   evt.preventDefault();

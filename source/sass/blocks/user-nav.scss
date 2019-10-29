@@ -35,20 +35,20 @@
     background-repeat: no-repeat;
   }
 
-  &__item--user &__link::before {
+  &__link--user::before {
     width: 13px;
     height: 12px;
     left: 0;
     background-image: url("../img/icon-user.svg");
   }
 
-  &__item--compare &__link::before {
+  &__link--compare::before {
     width: 10px;
     height: 10px;
     background-image: url("../img/icon-compare.svg");
   }
 
-  &__item--cart &__link::before {
+  &__link--cart::before {
     width: 12px;
     height: 12px;
     background-image: url("../img/icon-cart.svg");
@@ -70,15 +70,15 @@
     opacity: 0.3;
   }
 
-  .page-footer &__item--user &__link::before {
+  .page-footer &__link--user::before {
     background-image: url("../img/icon-user-yellow.svg");
   }
 
-  .page-footer &__item--compare &__link::before {
+  .page-footer &__link--compare::before {
     background-image: url("../img/icon-compare-yellow.svg");
   }
 
-  .page-footer &__item--cart &__link::before {
+  .page-footer &__link--cart::before {
     background-image: url("../img/icon-cart-yellow.svg");
   }
 

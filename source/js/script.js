@@ -48,13 +48,6 @@ try {
 var closePopupHandler = function(popup) {
   if (popup.classList.contains('popup--show')) {
 
-    var scrollY = body.style.top;
-    body.style.position = '';
-    body.style.top = '';
-  body.style.paddingRight = '0px';
-
-    window.scrollTo(0, parseInt(scrollY || '0') * -1);
-
     popup.classList.remove('popup--show');
     popup.classList.remove('popup--invalid');
   }
@@ -62,13 +55,6 @@ var closePopupHandler = function(popup) {
 
 openPopupBtn.addEventListener('click', function (evt) {
   evt.preventDefault();
-
-  // var scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
-  var scrollY = window.scrollY;
-  console.log(scrollY);
-  body.style.position = 'fixed';
-  body.style.paddingRight = '15px';
-  body.style.top = '-'  + scrollY + 'px';
 
   popup.classList.add('popup--show');
 

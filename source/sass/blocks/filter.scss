@@ -41,6 +41,7 @@
   &__label:last-child {
     margin-bottom: 0;
   }
+
   &__label::before {
     content: "";
     display: inline-block;
@@ -98,5 +99,4 @@
     width: 200px;
     margin-right: 70px;
   }
-
 }

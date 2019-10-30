@@ -29,7 +29,7 @@
     top: 0;
     bottom: 0;
     right: 76px;
-    background-color: #000;
+    background-color: #000000;
   }
 
   &__nav-item {
@@ -59,7 +59,7 @@
     transform: scaleY(1);
     left: 0;
     width: 284px;
-    background-color: #000;
+    background-color: #000000;
   }
 
 
@@ -92,11 +92,13 @@
     height: 164px;
     background-image: url("../img/icon-delivery.svg");
   }
+
   &__slide--warranty::before {
     width: 171px;
     height: 195px;
     background-image: url("../img/icon-warranty.svg");
   }
+
   &__slide--credit::before {
     width: 156px;
     height: 188px;

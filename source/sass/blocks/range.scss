@@ -5,7 +5,8 @@
   margin-left: -5px;
   user-select: none;
 
-  &__touch-left, &__touch-right {
+  &__touch-left,
+  &__touch-right {
     display: block;
     position: absolute;
     z-index: 2;
@@ -15,21 +16,25 @@
   &__touch-right {
     left: 57%;
   }
+
   &__touch-circle {
     @include button-reset;
     display: block;
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: #ffffff;
     box-shadow: 0 2px #dadada;
+
     &:active {
       transform: scale(1.1, 1.1);
     }
+
     &:focus {
       outline: 1px solid rgb(77, 144, 254);
     }
   }
+
   &__touch-circle::before {
     content: "";
     display: block;
@@ -54,7 +59,7 @@
     font-weight: 300;
     font-size: 14px;
     line-height: 24px;
-    color: #000;
+    color: #000000;
     opacity: 0.2;
     white-space: nowrap;
   }

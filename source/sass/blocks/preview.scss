@@ -18,7 +18,7 @@
     position: relative;
     order: 2;
     width: 560px;
-    padding: 0 55px 0 0px;
+    padding: 0 55px 0 0;
     margin-left: 40px;
   }
 
@@ -29,7 +29,7 @@
 
   &__content {
     @include reset;
-    padding: 20px 0px 45px 0;
+    padding: 20px 0 45px 0;
     font-family: $opensans;
     font-weight: 300;
     font-size: 15px;
@@ -46,7 +46,7 @@
     font-weight: 800;
     font-size: 180px;
     line-height: 1;
-    color: #fff;
+    color: #ffffff;
   }
 
   &__link {
@@ -78,6 +78,7 @@
     line-height: 20px;
     color: #464646;
   }
+
   &__spec-term:not(:last-child) {
     padding-right: 75px;
   }
@@ -90,10 +91,10 @@
     line-height: 48px;
   }
 
-
   &__radio {
     @include visuallyhidden;
   }
+
   &__radio:checked + &__article {
     display: flex;
   }
@@ -113,14 +114,13 @@
     height: 12px;
     margin-right: 20px;
     border-radius: 50%;
-    border: 1px solid #000;
+    border: 1px solid #000000;
     cursor: pointer;
   }
 
   &__nav-btn:last-child {
     margin-right: 0;
   }
-
 
   &__radio[id="article-1"]:checked ~ &__nav > &__nav-btn[for="article-1"]::before,
   &__radio[id="article-2"]:checked ~ &__nav > &__nav-btn[for="article-2"]::before,
@@ -134,8 +134,9 @@
     width: 4px;
     height: 4px;
     border-radius: 50%;
-    border: 1px solid #000;
+    border: 1px solid #000000;
   }
+
   &__radio[id="article-1"]:focus ~ &__nav > &__nav-btn[for="article-1"],
   &__radio[id="article-2"]:focus ~ &__nav > &__nav-btn[for="article-2"],
   &__radio[id="article-3"]:focus ~ &__nav > &__nav-btn[for="article-3"] {
@@ -145,9 +146,8 @@
   &__nav-btn:hover {
     border-width: 2px;
   }
+
   &__nav-btn:active {
     opacity: 0.5;
   }
-
-
 }

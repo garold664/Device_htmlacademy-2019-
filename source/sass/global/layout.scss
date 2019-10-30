@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -16,9 +18,9 @@ body {
 
   font-family: $opensans;
   font-weight: 300;
-  color: #000;
+  color: #000000;
   font-style: normal;
-  background-color: #fff;
+  background-color: #ffffff;
 
   left: 0;
   right: 0;
@@ -32,6 +34,3 @@ img {
 .visuallyhidden {
   @include visuallyhidden;
 }
-
-
-

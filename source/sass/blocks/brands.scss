@@ -1,6 +1,7 @@
 .brands {
   padding-top: 95px;
   padding-bottom: 65px;
+
   &__list {
     @include ul-reset;
     @include container;
@@ -22,6 +23,7 @@
   &__link--dji {
     background-image: url("../img/icon-logo-dji--inactive.png");
   }
+
   &__link--dji:hover {
     background-image: url("../img/icon-logo-dji.png");
   }
@@ -30,6 +32,7 @@
   &__link--spgadgets {
     background-image: url("../img/icon-logo-spgadgets--inactive.png");
   }
+
   &__link--spgadgets:hover {
     background-image: url("../img/icon-logo-spgadgets.png");
   }
@@ -38,6 +41,7 @@
   &__link--gopro {
     background-image: url("../img/icon-logo-gopro--inactive.png");
   }
+
   &__link--gopro:hover {
     background-image: url("../img/icon-logo-gopro.png");
   }
@@ -46,9 +50,8 @@
   &__link--vive {
     background-image: url("../img/icon-logo-vive--inactive.png");
   }
+
   &__link--vive:hover {
     background-image: url("../img/icon-logo-vive.png");
   }
-
-
 }

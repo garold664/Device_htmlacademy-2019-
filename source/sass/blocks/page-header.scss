@@ -23,6 +23,7 @@
     width: 440px;
     font-size: 0;
   }
+
   &__search-icon {
     position: absolute;
     left: 3px;
@@ -50,7 +51,7 @@
   }
 
   &__search-input:focus {
-    border-color: #000;
+    border-color: #000000;
   }
 
   &__search-input:-ms-input-placeholder {
@@ -80,7 +81,7 @@
     opacity: 0;
     pointer-events: none;
     padding: 8px 19px;
-    border: 2px solid #000;
+    border: 2px solid #000000;
     font-weight: 300;
     font-size: 15px;
     line-height: 2;
@@ -92,8 +93,8 @@
   &__search-submit:active {
     opacity: 1;
     pointer-events: auto;
-    background-color: #000;
-    color: #fff;
+    background-color: #000000;
+    color: #ffffff;
   }
 
   &__search-submit:active::before,
@@ -104,7 +105,7 @@
     right: 0;
     bottom: 0;
     height: 2px;
-    background-color: #000;
+    background-color: #000000;
   }
 
   &__search-submit:active {
@@ -120,6 +121,4 @@
   .catalog-page &__container {
     padding-bottom: 48px;
   }
-
-
 }

@@ -1,5 +1,4 @@
 .page-nav {
-
   &__list {
     @include ul-reset;
     display: flex;
@@ -29,12 +28,13 @@
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 3.6px;
-    color: #000;
+    color: #000000;
   }
 
   &__link:hover {
     color: rgba(0, 0, 0, 0.6);
   }
+
   &__item--dropdown:hover > &__link {
     color: rgba(0, 0, 0, 0.6);
   }
@@ -54,13 +54,14 @@
     background-image: url("../img/icon-plus.png");
     background-repeat: no-repeat;
   }
+
   &__sublist {
+    @include ul-reset;
     display: none;
     position: absolute;
     z-index: 10;
     left: 0;
     right: 0;
-    @include ul-reset;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -84,7 +85,7 @@
     margin-left: 10px;
   }
 
-  &__item--dropdown:hover  &__sublist {
+  &__item--dropdown:hover &__sublist {
     display: flex;
   }
 

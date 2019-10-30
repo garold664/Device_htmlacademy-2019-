@@ -1,5 +1,5 @@
 .page-footer {
-  color: #fff;
+  color: #ffffff;
   background-color: #464646;
 
   &__container {
@@ -11,9 +11,6 @@
   &__row {
     display: flex;
     justify-content: space-between;
-  }
-
-  &__row--user-nav {
   }
 
   & .logo {
@@ -36,11 +33,11 @@
   }
 
   & .user-nav__link:hover {
-   color: rgba(255, 255, 255, 1)
+    color: rgba(255, 255, 255, 1);
   }
 
   & .user-nav__link:active {
-   color: rgba(255, 255, 255, 0.3)
+    color: rgba(255, 255, 255, 0.3);
   }
 
 
@@ -69,7 +66,7 @@
     line-height: 24px;
     text-transform: uppercase;
     letter-spacing: 3.6px;
-    color: #fff;
+    color: #ffffff;
   }
 
   &__nav-link:hover {
@@ -82,7 +79,7 @@
 
   &__tel-number {
     @include link-reset;
-    color: #fff;
+    color: #ffffff;
   }
 
   &__row--socials {
@@ -116,12 +113,15 @@
     opacity: 0.3;
     background-repeat: no-repeat;
   }
+
   &__socials-link--facebook::before {
     background-image: url("../img/icon-facebook.svg");
   }
+
   &__socials-link--instagram::before {
     background-image: url("../img/icon-instagram.svg");
   }
+
   &__socials-link--twitter::before {
     background-image: url("../img/icon-twitter.svg");
   }

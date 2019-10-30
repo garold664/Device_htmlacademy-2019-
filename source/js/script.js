@@ -117,3 +117,11 @@ mapPopup.addEventListener('click', function (evt) {
   }
 
 });
+
+
+window.addEventListener('keydown', function (evt) {
+  if (evt.keyCode === 27)  {
+    evt.preventDefault();
+    closePopupHandler(mapPopup);
+  }
+});

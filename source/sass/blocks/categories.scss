@@ -70,7 +70,8 @@
     background-image: url("../img/icon-quadcopter.svg");
   }
 
-  &__link:hover::before {
+  &__link:hover::before,
+  &__link:active::before {
     background-color: $yellowBright;
   }
 

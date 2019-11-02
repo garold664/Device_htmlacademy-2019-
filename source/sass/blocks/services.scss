@@ -44,24 +44,18 @@
     letter-spacing: 3.6px;
   }
 
-
-  &__nav-link:active {
-    color: rgba(0, 0, 0, 0.3);
-  }
-
   &__nav-link--active,
-  &__nav-link--active:active {
+  &__nav-link:active {
     color: #f7e184;
   }
 
   &__nav-link--active::before,
-  &__nav-link:active ::before {
+  &__nav-link:active::before {
     transform: scaleY(1);
     left: 0;
     width: 284px;
     background-color: #000000;
   }
-
 
   &__nav-link--active {
     cursor: default;
